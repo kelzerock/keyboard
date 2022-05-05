@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":"AAEAA,QAAQC,IAFa","sources":["webpack://keyboard/./src/index.js"],"sourcesContent":["const first = {user: 'alex'}\n\nconsole.log(first.user)"],"names":["console","log"],"sourceRoot":""}
