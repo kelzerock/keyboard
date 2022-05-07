@@ -1,0 +1,45 @@
+.keyboard {
+  height: 200px;
+  flex: 0 0 700px;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background: #a3a3a3;
+
+  .keyboard-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .key {
+      flex: 0 1 40px;
+      border: solid black 2px;
+      border-radius: 5px;
+      background-color: #777777;
+      display: flex;
+      height: 35px;
+      flex-direction: column-reverse;
+      position: relative;
+
+      & div:first-child {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+      }
+      & div:last-child {
+        position: absolute;
+        top: 2px;
+        left: 7px;
+      }
+    }
+    .key-1 {
+      flex: 0 0 40px;
+    }
+    .key-2 {
+      flex: 0 0 80px;
+    }
+    .key-3 {
+      flex: 0 0 200px;
+    }
+  }
+}

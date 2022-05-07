@@ -1,0 +1,47 @@
+
+
+body {
+  background-color: rgb(173 199 173);
+  margin: 0;
+  * {
+    margin: 0;
+  }
+}
+
+.main-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  background-color: rgb(224 241 224);
+  box-shadow: 12px 0px 200px #3e423e;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  [class*="__container"]{
+    max-width: 10100px;
+    margin: 0 auto;
+  }
+
+  .main {
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    .keyboard-area {
+      margin: 20px 0;
+      height: 200px;
+      flex: 0 1 500px;
+    }  
+  }
+}
+
+@import "./keyboard.scss";
+@import "./footer.scss"
