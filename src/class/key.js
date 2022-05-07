@@ -62,7 +62,7 @@ const keysForKeyboard = [
     {first: 'Cntr', second: '', func: true, size: 1, data: 'ControlLeft'},
     {first: 'Win', second: '', func: true, size: 1, data: 'MetaLeft'},
     {first: 'Alt', second: '', func: true, size: 1, data: 'AltLeft'},
-    {first: '', second: '', func: false, size: 3, data: 'Space'},
+    {first: ' ', second: '', func: false, size: 3, data: 'Space'},
     {first: 'Alt', second: '', func: true, size: 1, data: 'AltRight'},
     {first: '&#9668;', second: '', func: true, size: 1, data: 'ArrowLeft'},
     {first: '&#9660;', second: '', func: true, size: 1, data: 'ArrowDown'},

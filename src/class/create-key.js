@@ -14,6 +14,8 @@ class CreateKey{
     elemMain.classList.add(`key-${this.size}`);
     elemMain.classList.add('key');
     elemMain.dataset.code = this.dataAttr;
+    elemMain.dataset.firstValue = this.firstIndex;
+    elemMain.dataset.secondValue = this.secondIndex;
     elemMain.id = this.dataAttr;
     if(!this.secondIndex) elemMain.classList.add('key-one');
     const elemFirst = document.createElement('p');

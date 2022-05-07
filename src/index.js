@@ -5,6 +5,7 @@ import templateFooter from './html/footer.html'
 import templateHeader from "./html/head.html"
 import startEventKey from "./js/event";
 import startEventMouse from "./js/eventMouse";
+import eventForInput from "./js/eventInput";
 
 import "./css/style.scss";
 // import "./css/keyboard.scss";
@@ -22,6 +23,7 @@ const footer = new CreateItem(mainWrapper.node, "footer","footer");
 footer.create();
 const screen = new CreateItem(main.node, "textarea", "keyboard-area");
 screen.create();
+screen.onblur
 const keyboard = new CreateItem(main.node, "div", "keyboard");
 keyboard.create();
 startEventMouse(keyboard.node)
@@ -46,4 +48,5 @@ for (let j = 0; j < keysForKeyboard.length; j++) {
   }
 }
 
+eventForInput(screen.node, keyboard.node)
 footer.node.innerHTML = templateFooter

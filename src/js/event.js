@@ -1,7 +1,7 @@
 
 function startEventKey(){
   document.addEventListener('keydown', (event)=>{
-    const downKey = document.getElementById(event.code)
+    const downKey = document.querySelector(`#${event.code}`)
     downKey.classList.add('active')
   })
 
