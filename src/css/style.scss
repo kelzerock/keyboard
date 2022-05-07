@@ -9,7 +9,7 @@ body {
 }
 
 .main-wrapper {
-  overflow: hidden;
+  // overflow: hidden;
   max-width: 1200px;
   background-color: rgb(224 241 224);
   box-shadow: 12px 0px 200px #3e423e;
@@ -20,7 +20,7 @@ body {
   min-height: 100%;
 
   [class*="__container"]{
-    max-width: 10100px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 

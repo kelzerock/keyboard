@@ -13,9 +13,9 @@ const keysForKeyboard = [
     {first: '0', second: ')', func: false, size: 1},
     {first: '-', second: '_', func: false, size: 1},
     {first: '=', second: '+', func: false, size: 1},
-    {first: '&larr;', second: 'backspace', func: true, size: 2}
+    {first: 'Backspace', second: '', func: true, size: 2}
   ],[
-    {first: 'tab', second: '<<', func: true, size: 2},
+    {first: 'Tab', second: '', func: true, size: 1},
     {first: 'q', second: '', func: false, size: 1},
     {first: 'w', second: '', func: false, size: 1},
     {first: 'e', second: '', func: false, size: 1},
@@ -28,9 +28,9 @@ const keysForKeyboard = [
     {first: 'p', second: '', func: false, size: 1},
     {first: '[', second: '{', func: false, size: 1},
     {first: ']', second: '}', func: false, size: 1},
-    {first: 'Enter', second: '', func: true, size: 2},
+    {first: 'Del', second: '', func: true, size: 2},
   ],[
-    {first: 'caps lock', second: '', func: true, size: 2},
+    {first: 'Caps lock', second: '', func: true, size: 2},
     {first: 'a', second: '', func: false, size: 1},
     {first: 's', second: '', func: false, size: 1},
     {first: 'd', second: '', func: false, size: 1},
@@ -43,9 +43,9 @@ const keysForKeyboard = [
     {first: ';', second: ':', func: false, size: 1},
     {first: '\'', second: '"', func: false, size: 1},
     {first: '\\', second: '|', func: false, size: 1},
-    {first: 'del', second: '', func: true, size: 1},
+    {first: 'Enter', second: '', func: true, size: 2},
   ],[
-    {first: 'shift', second: '', func: true, size: 2},
+    {first: 'Shift', second: '', func: true, size: 2},
     {first: 'z', second: '', func: false, size: 1},
     {first: 'x', second: '', func: false, size: 1},
     {first: 'c', second: '', func: false, size: 1},
@@ -57,17 +57,17 @@ const keysForKeyboard = [
     {first: '.', second: '>', func: false, size: 1},
     {first: '/', second: '?', func: false, size: 1},
     {first: '&#9650;', second: '', func: true, size: 1},
-    {first: 'shift', second: '', func: true, size: 2},
+    {first: 'Shift', second: '', func: true, size: 2},
   ],[
-    {first: 'cntr', second: '', func: true, size: 1},
-    {first: 'win', second: '', func: false, size: 1},
-    {first: 'alt', second: '', func: true, size: 1},
-    {first: 'space', second: '', func: true, size: 3},
-    {first: 'alt', second: '', func: true, size: 1},
-    {first: 'cntr', second: '', func: true, size: 1},
+    {first: 'Cntr', second: '', func: true, size: 1},
+    {first: 'Win', second: '', func: true, size: 1},
+    {first: 'Alt', second: '', func: true, size: 1},
+    {first: '', second: '', func: false, size: 3},
+    {first: 'Alt', second: '', func: true, size: 1},
     {first: '&#9668;', second: '', func: true, size: 1},
     {first: '&#9660;', second: '', func: true, size: 1},
     {first: '&#9658;', second: '', func: true, size: 1},
+    {first: 'Cntr', second: '', func: true, size: 1},
   ]
 ]
 

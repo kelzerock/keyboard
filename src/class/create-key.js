@@ -12,9 +12,17 @@ class CreateKey{
     const elemMain = document.createElement('div');
     elemMain.classList.add(`key-${this.size}`);
     elemMain.classList.add('key')
-    const elemFirst = document.createElement('div');
-    elemFirst.innerHTML = this.firstIndex;
-    const elemSecond = document.createElement('div');
+    if(!this.secondIndex) elemMain.classList.add('key-one')
+    const elemFirst = document.createElement('p');
+    if(this.func){
+     elemFirst.innerHTML = this.firstIndex; 
+     elemMain.classList.add('key-func');
+    } else {
+      elemFirst.innerHTML = this.firstIndex.toUpperCase();
+    }
+
+
+    const elemSecond = document.createElement('p');
     elemSecond.innerHTML = this.secondIndex;
     elemMain.append(elemFirst);
     elemMain.append(elemSecond);

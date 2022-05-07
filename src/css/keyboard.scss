@@ -1,45 +1,67 @@
 .keyboard {
-  height: 200px;
-  flex: 0 0 700px;
+  min-height: 200px;
+  flex: 0 0 689px;
   border: solid black 2px;
   border-radius: 5px;
   padding: 5px;
   background: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
 
   .keyboard-line {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 2px;
 
     .key {
       flex: 0 1 40px;
       border: solid black 2px;
       border-radius: 5px;
-      background-color: #777777;
+      // background-color: #777777;
+      background-color:rgb(22, 20, 20);
+      color: white;
       display: flex;
       height: 35px;
       flex-direction: column-reverse;
       position: relative;
 
-      & div:first-child {
+      & p:first-child {
         position: absolute;
-        top: 15px;
-        left: 20px;
+        top: 12px;
+        left: 16px;
       }
-      & div:last-child {
+      & p:last-child {
+        color: wheat;
         position: absolute;
-        top: 2px;
-        left: 7px;
+        top: 3px;
+        left: 6px;
+        font-size: 0.7em;
       }
     }
     .key-1 {
       flex: 0 0 40px;
     }
-    .key-2 {
-      flex: 0 0 80px;
-    }
+    .key-2,
     .key-3 {
-      flex: 0 0 200px;
+      flex: 1 1 50px;
+    }
+    .key-one {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p:first-child {
+        display: block;
+        top: auto;
+        left: auto;
+        text-align: center;
+      }
+    }
+    .key-func {
+      background-color:rgb(2, 2, 2);
+      font-size: 12px;
     }
   }
 }
