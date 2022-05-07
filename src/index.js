@@ -1,15 +1,21 @@
 import CreateItem from "./class/create-element";
 import CreateKey from "./class/create-key";
 import keysForKeyboard from "./class/key";
-import template from './html/footer.html'
+import templateFooter from './html/footer.html'
+import templateHeader from "./html/head.html"
+import startEventKey from "./js/event";
+import startEventMouse from "./js/eventMouse";
 
 import "./css/style.scss";
 // import "./css/keyboard.scss";
+
+startEventKey()
 
 const mainWrapper = new CreateItem(document.body, "div", "main-wrapper");
 mainWrapper.create();
 const header = new CreateItem(mainWrapper.node, "header", "header");
 header.create();
+header.node.innerHTML = templateHeader;
 const main = new CreateItem(mainWrapper.node, "main", "main");
 main.create();
 const footer = new CreateItem(mainWrapper.node, "footer","footer");
@@ -18,6 +24,7 @@ const screen = new CreateItem(main.node, "textarea", "keyboard-area");
 screen.create();
 const keyboard = new CreateItem(main.node, "div", "keyboard");
 keyboard.create();
+startEventMouse(keyboard.node)
 
 for (let j = 0; j < keysForKeyboard.length; j++) {
   const keyboardFirstLine = new CreateItem(
@@ -32,10 +39,11 @@ for (let j = 0; j < keysForKeyboard.length; j++) {
       keysForKeyboard[j][i].first,
       keysForKeyboard[j][i].second,
       keysForKeyboard[j][i].func,
-      keysForKeyboard[j][i].size
+      keysForKeyboard[j][i].size,
+      keysForKeyboard[j][i].data
     );
     key_item.create();
   }
 }
 
-footer.node.innerHTML = template
+footer.node.innerHTML = templateFooter

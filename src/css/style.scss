@@ -11,7 +11,7 @@ body {
 .main-wrapper {
   // overflow: hidden;
   max-width: 1200px;
-  background-color: rgb(224 241 224);
+  background-color: white;
   box-shadow: 12px 0px 200px #3e423e;
   margin: 0 auto;
   height: 100vh;
@@ -44,4 +44,5 @@ body {
 }
 
 @import "./keyboard.scss";
-@import "./footer.scss"
+@import "./footer.scss";
+@import "./header.scss"

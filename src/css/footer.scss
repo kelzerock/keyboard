@@ -1,4 +1,23 @@
 .footer {
   height: 50px;
   background-color: black;
+
+  .wrapper-footer {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 50px;
+
+    img {
+      height: 100%;
+    }
+
+    h3 {
+      align-self: center;
+    }
+  }
 }

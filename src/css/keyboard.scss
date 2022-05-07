@@ -26,18 +26,35 @@
       height: 35px;
       flex-direction: column-reverse;
       position: relative;
+      transition: all 0.1s;
+      cursor: pointer;
+      user-select: none;
 
-      & p:first-child {
+      &:hover {
+        background-color: rgb(97, 82, 82);
+      }
+
+      & .p-first {
         position: absolute;
         top: 12px;
         left: 16px;
+        
       }
-      & p:last-child {
+      & .p-second {
         color: wheat;
         position: absolute;
         top: 3px;
         left: 6px;
         font-size: 0.7em;
+      }
+
+      &.active {
+        // background-color: rgb(121, 76, 76);
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        transform: scale(0.93);
+        box-shadow: 2px 2px 10px black;
       }
     }
     .key-1 {
@@ -63,5 +80,9 @@
       background-color:rgb(2, 2, 2);
       font-size: 12px;
     }
+    // .active {
+    //   background-color: rgb(121, 76, 76);
+    //   border-radius: 20px;
+    // }
   }
 }
