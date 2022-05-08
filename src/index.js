@@ -27,13 +27,14 @@ screen.create();
 screen.onblur;
 const keyboard = new CreateItem(main.node, "div", "keyboard");
 keyboard.create();
-startEventMouse(keyboard.node);
+// startEventMouse(keyboard.node);
 
 function createKeyboard(elem, array) {
   elem.innerHTML = "";
   for (let j = 0; j < array.length; j++) {
     const keyboardFirstLine = new CreateItem(elem, "div", "keyboard-line");
     keyboardFirstLine.create();
+    startEventMouse(keyboardFirstLine.node)
     for (let i = 0; i < array[j].length; i++) {
       const key_item = new CreateKey(
         keyboardFirstLine.node,
@@ -55,4 +56,3 @@ createKeyboard(keyboard.node, keysForKeyboard);
 startEventKey(screen.node);
 eventForInput(screen.node);
 footer.node.innerHTML = templateFooter;
-
