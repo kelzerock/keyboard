@@ -27,7 +27,7 @@ function startEventKey() {
       if (downKey.dataset.code === "Backspace")
         addText('', 'prev');
       if (!downKey.classList.contains("key-func"))
-        addText(downKey.dataset.firstValue);
+        addText(String(downKey.dataset.firstValue));
       // elem.value += downKey.dataset.firstValue;
     }
   });

@@ -12,7 +12,6 @@ import capsLockReaction from "./js/capsLockReaction";
 import "./css/style.scss";
 // import "./css/keyboard.scss";
 
-
 const mainWrapper = new CreateItem(document.body, "div", "main-wrapper");
 mainWrapper.create();
 const header = new CreateItem(mainWrapper.node, "header", "header");
@@ -34,7 +33,7 @@ function createKeyboard(elem, array) {
   for (let j = 0; j < array.length; j++) {
     const keyboardFirstLine = new CreateItem(elem, "div", "keyboard-line");
     keyboardFirstLine.create();
-    startEventMouse(keyboardFirstLine.node)
+    startEventMouse(keyboardFirstLine.node);
     for (let i = 0; i < array[j].length; i++) {
       const key_item = new CreateKey(
         keyboardFirstLine.node,
@@ -46,13 +45,43 @@ function createKeyboard(elem, array) {
       );
       key_item.create();
       shiftReaction(key_item.node);
-      capsLockReaction(key_item.node)
+      capsLockReaction(key_item.node);
     }
   }
 }
 
-createKeyboard(keyboard.node, keysForKeyboard);
+if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
+if (localStorage.getItem("language") === "en")
+  createKeyboard(keyboard.node, keysForKeyboard.en);
+if (localStorage.getItem("language") === "ru")
+  createKeyboard(keyboard.node, keysForKeyboard.ru);
 
 startEventKey(screen.node);
 eventForInput(screen.node);
 footer.node.innerHTML = templateFooter;
+
+function changeLanguage() {
+  const arrKey = [];
+  document.addEventListener("keydown", (event) => {
+    const code = event.which;
+    if (arrKey.indexOf(code) < 0) {
+      arrKey.push(code);
+    }
+    if(event.ctrlKey && event.altKey){
+      if(localStorage.language === 'en'){
+        createKeyboard(keyboard.node, keysForKeyboard.ru);
+        localStorage.language = 'ru'
+      } else if(localStorage.language === 'ru'){
+        createKeyboard(keyboard.node, keysForKeyboard.en);
+        localStorage.language = 'en'
+      }
+    }
+
+  });
+  document.addEventListener("keyup", function (e) {
+    arrKey.splice(arrKey.indexOf(e.which), 1);
+  });
+  console.log(Boolean(arrKey.includes(16) && arrKey.includes(18)))
+
+}
+changeLanguage();
