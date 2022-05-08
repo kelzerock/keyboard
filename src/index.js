@@ -1,16 +1,17 @@
 import CreateItem from "./class/create-element";
 import CreateKey from "./class/create-key";
 import keysForKeyboard from "./class/key";
-import templateFooter from './html/footer.html'
-import templateHeader from "./html/head.html"
+import templateFooter from "./html/footer.html";
+import templateHeader from "./html/head.html";
 import startEventKey from "./js/event";
 import startEventMouse from "./js/eventMouse";
 import eventForInput from "./js/eventInput";
+import shiftReaction from "./js/shiftReaction";
+import capsLockReaction from "./js/capsLockReaction";
 
 import "./css/style.scss";
 // import "./css/keyboard.scss";
 
-startEventKey()
 
 const mainWrapper = new CreateItem(document.body, "div", "main-wrapper");
 mainWrapper.create();
@@ -19,34 +20,39 @@ header.create();
 header.node.innerHTML = templateHeader;
 const main = new CreateItem(mainWrapper.node, "main", "main");
 main.create();
-const footer = new CreateItem(mainWrapper.node, "footer","footer");
+const footer = new CreateItem(mainWrapper.node, "footer", "footer");
 footer.create();
 const screen = new CreateItem(main.node, "textarea", "keyboard-area");
 screen.create();
-screen.onblur
+screen.onblur;
 const keyboard = new CreateItem(main.node, "div", "keyboard");
 keyboard.create();
-startEventMouse(keyboard.node)
+startEventMouse(keyboard.node);
 
-for (let j = 0; j < keysForKeyboard.length; j++) {
-  const keyboardFirstLine = new CreateItem(
-    keyboard.node,
-    "div",
-    "keyboard-line"
-  );
-  keyboardFirstLine.create();
-  for (let i = 0; i < keysForKeyboard[j].length; i++) {
-    const key_item = new CreateKey(
-      keyboardFirstLine.node,
-      keysForKeyboard[j][i].first,
-      keysForKeyboard[j][i].second,
-      keysForKeyboard[j][i].func,
-      keysForKeyboard[j][i].size,
-      keysForKeyboard[j][i].data
-    );
-    key_item.create();
+function createKeyboard(elem, array) {
+  elem.innerHTML = "";
+  for (let j = 0; j < array.length; j++) {
+    const keyboardFirstLine = new CreateItem(elem, "div", "keyboard-line");
+    keyboardFirstLine.create();
+    for (let i = 0; i < array[j].length; i++) {
+      const key_item = new CreateKey(
+        keyboardFirstLine.node,
+        array[j][i].first,
+        array[j][i].second,
+        array[j][i].func,
+        array[j][i].size,
+        array[j][i].data
+      );
+      key_item.create();
+      shiftReaction(key_item.node);
+      capsLockReaction(key_item.node)
+    }
   }
 }
 
-eventForInput(screen.node, keyboard.node)
-footer.node.innerHTML = templateFooter
+createKeyboard(keyboard.node, keysForKeyboard);
+
+startEventKey(screen.node);
+eventForInput(screen.node);
+footer.node.innerHTML = templateFooter;
+

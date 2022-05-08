@@ -56,17 +56,17 @@ const keysForKeyboard = [
     {first: ',', second: '<', func: false, size: 1, data: 'Comma'},
     {first: '.', second: '>', func: false, size: 1, data: 'Period'},
     {first: '/', second: '?', func: false, size: 1, data: 'Slash'},
-    {first: '&#9650;', second: '', func: true, size: 1, data: 'ArrowUp'},
+    {first: '▲', second: '', func: true, size: 1, data: 'ArrowUp'},
     {first: 'Shift', second: '', func: true, size: 2, data: 'ShiftRight'},
   ],[
     {first: 'Cntr', second: '', func: true, size: 1, data: 'ControlLeft'},
     {first: 'Win', second: '', func: true, size: 1, data: 'MetaLeft'},
     {first: 'Alt', second: '', func: true, size: 1, data: 'AltLeft'},
-    {first: ' ', second: '', func: false, size: 3, data: 'Space'},
+    {first: ' ', second: ' ', func: false, size: 3, data: 'Space'},
     {first: 'Alt', second: '', func: true, size: 1, data: 'AltRight'},
-    {first: '&#9668;', second: '', func: true, size: 1, data: 'ArrowLeft'},
-    {first: '&#9660;', second: '', func: true, size: 1, data: 'ArrowDown'},
-    {first: '&#9658;', second: '', func: true, size: 1, data: 'ArrowRight'},
+    {first: '◄', second: '', func: true, size: 1, data: 'ArrowLeft'},
+    {first: '▼', second: '', func: true, size: 1, data: 'ArrowDown'},
+    {first: '►', second: '', func: true, size: 1, data: 'ArrowRight'},
     {first: 'Cntr', second: '', func: true, size: 1, data: 'ControlRight'},
   ]
 ]
