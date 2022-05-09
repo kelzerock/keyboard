@@ -1526,8 +1526,6 @@ function capsLockReaction(elem) {
 
   document.addEventListener('keydown', function (event) {
     if (event.code === 'CapsLock') {
-      console.log('this is caps lock');
-
       if (!elem.classList.contains('key-func')) {
         if (localStorage.capsLock !== 'true') {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
@@ -2030,17 +2028,19 @@ var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"]
 keyboard.create();
 
 if (!localStorage.getItem('capsLock')) {
+  localStorage.capsLock = 'false';
+} else {
   localStorage.setItem('capsLock', 'false');
 }
 
 function createKeyboard(elementDom, array) {
   elementDom.innerHTML = '';
 
-  for (var j = 0; j < array.length; j++) {
+  for (var j = 0; j < array.length; j += 1) {
     var keyboardFirstLine = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](elementDom, 'div', 'keyboard-line');
     keyboardFirstLine.create(); // startEventMouse(keyboardFirstLine.node);
 
-    for (var i = 0; i < array[j].length; i++) {
+    for (var i = 0; i < array[j].length; i += 1) {
       var keyItem = new _class_create_key__WEBPACK_IMPORTED_MODULE_1__["default"](keyboardFirstLine.node, array[j][i].first, array[j][i].second, array[j][i].func, array[j][i].size, array[j][i].data);
       keyItem.create();
       (0,_js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__["default"])(keyItem.node);
