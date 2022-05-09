@@ -28,16 +28,18 @@ const keyboard = new CreateItem(main.node, 'div', 'keyboard');
 keyboard.create();
 
 if (!localStorage.getItem('capsLock')) {
+  localStorage.capsLock = 'false';
+} else {
   localStorage.setItem('capsLock', 'false');
 }
 
 function createKeyboard(elementDom, array) {
   elementDom.innerHTML = '';
-  for (let j = 0; j < array.length; j++) {
+  for (let j = 0; j < array.length; j += 1) {
     const keyboardFirstLine = new CreateItem(elementDom, 'div', 'keyboard-line');
     keyboardFirstLine.create();
     // startEventMouse(keyboardFirstLine.node);
-    for (let i = 0; i < array[j].length; i++) {
+    for (let i = 0; i < array[j].length; i += 1) {
       const keyItem = new CreateKey(
         keyboardFirstLine.node,
         array[j][i].first,

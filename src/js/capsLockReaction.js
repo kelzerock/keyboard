@@ -13,7 +13,6 @@ export default function capsLockReaction(elem) {
 
   document.addEventListener('keydown', (event) => {
     if (event.code === 'CapsLock') {
-      console.log('this is caps lock');
       if (!elem.classList.contains('key-func')) {
         if (localStorage.capsLock !== 'true') {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
