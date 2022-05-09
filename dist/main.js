@@ -92,8 +92,13 @@ var CreateKey = /*#__PURE__*/function () {
       elemMain.dataset.secondValue = this.secondIndex;
       elemMain.id = this.dataAttr; // if (!this.secondIndex) elemMain.classList.add("key-one");
 
+<<<<<<< HEAD
       var elemFirst = document.createElement('p');
       elemFirst.classList.add('p-first');
+=======
+      var elemFirst = document.createElement("p");
+      elemFirst.classList.add("p-first");
+>>>>>>> 730079e (feat: ready to deploy)
 
       if (this.func) {
         elemFirst.innerHTML = this.firstIndex;
@@ -132,212 +137,387 @@ __webpack_require__.r(__webpack_exports__);
 var keysLang = {
   en: {
     Backquote: {
+<<<<<<< HEAD
       first: '`',
       second: '~',
+=======
+      first: "`",
+      second: "~",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit1: {
+<<<<<<< HEAD
       first: '1',
       second: '!',
+=======
+      first: "1",
+      second: "!",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit2: {
+<<<<<<< HEAD
       first: '2',
       second: '@',
+=======
+      first: "2",
+      second: "@",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit3: {
+<<<<<<< HEAD
       first: '3',
       second: '#',
+=======
+      first: "3",
+      second: "#",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit4: {
+<<<<<<< HEAD
       first: '4',
       second: '$',
+=======
+      first: "4",
+      second: "$",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit5: {
+<<<<<<< HEAD
       first: '5',
       second: '%',
+=======
+      first: "5",
+      second: "%",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit6: {
+<<<<<<< HEAD
       first: '6',
       second: '^',
+=======
+      first: "6",
+      second: "^",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit7: {
+<<<<<<< HEAD
       first: '7',
       second: '&',
+=======
+      first: "7",
+      second: "&",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit8: {
+<<<<<<< HEAD
       first: '8',
       second: '*',
+=======
+      first: "8",
+      second: "*",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit9: {
+<<<<<<< HEAD
       first: '9',
       second: '(',
+=======
+      first: "9",
+      second: "(",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit0: {
+<<<<<<< HEAD
       first: '0',
       second: ')',
+=======
+      first: "0",
+      second: ")",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Minus: {
+<<<<<<< HEAD
       first: '-',
       second: '_',
+=======
+      first: "-",
+      second: "_",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Equal: {
+<<<<<<< HEAD
       first: '=',
       second: '+',
+=======
+      first: "=",
+      second: "+",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyQ: {
+<<<<<<< HEAD
       first: 'q',
       second: '',
+=======
+      first: "q",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyW: {
+<<<<<<< HEAD
       first: 'w',
       second: '',
+=======
+      first: "w",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyE: {
+<<<<<<< HEAD
       first: 'e',
       second: '',
+=======
+      first: "e",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyR: {
+<<<<<<< HEAD
       first: 'r',
       second: '',
+=======
+      first: "r",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyT: {
+<<<<<<< HEAD
       first: 't',
       second: '',
+=======
+      first: "t",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyY: {
+<<<<<<< HEAD
       first: 'y',
       second: '',
+=======
+      first: "y",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyU: {
+<<<<<<< HEAD
       first: 'u',
       second: '',
+=======
+      first: "u",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyI: {
+<<<<<<< HEAD
       first: 'i',
       second: '',
+=======
+      first: "i",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyO: {
+<<<<<<< HEAD
       first: 'o',
       second: '',
+=======
+      first: "o",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyP: {
+<<<<<<< HEAD
       first: 'p',
       second: '',
+=======
+      first: "p",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     BracketLeft: {
+<<<<<<< HEAD
       first: '[',
       second: '{',
+=======
+      first: "[",
+      second: "{",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     BracketRight: {
+<<<<<<< HEAD
       first: ']',
       second: '}',
+=======
+      first: "]",
+      second: "}",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyA: {
+<<<<<<< HEAD
       first: 'a',
       second: '',
+=======
+      first: "a",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyS: {
+<<<<<<< HEAD
       first: 's',
       second: '',
+=======
+      first: "s",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyD: {
+<<<<<<< HEAD
       first: 'd',
       second: '',
+=======
+      first: "d",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyF: {
+<<<<<<< HEAD
       first: 'f',
       second: '',
+=======
+      first: "f",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyG: {
+<<<<<<< HEAD
       first: 'g',
       second: '',
+=======
+      first: "g",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyH: {
+<<<<<<< HEAD
       first: 'h',
       second: '',
+=======
+      first: "h",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyJ: {
+<<<<<<< HEAD
       first: 'j',
       second: '',
+=======
+      first: "j",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyK: {
+<<<<<<< HEAD
       first: 'k',
       second: '',
+=======
+      first: "k",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyL: {
+<<<<<<< HEAD
       first: 'l',
       second: '',
+=======
+      first: "l",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Semicolon: {
+<<<<<<< HEAD
       first: ';',
       second: ':',
+=======
+      first: ";",
+      second: ":",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
@@ -349,363 +529,659 @@ var keysLang = {
     },
     Backslash: {
       first: '\\',
+<<<<<<< HEAD
       second: '|',
+=======
+      second: "|",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyZ: {
+<<<<<<< HEAD
       first: 'z',
       second: '',
+=======
+      first: "z",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyX: {
+<<<<<<< HEAD
       first: 'x',
       second: '',
+=======
+      first: "x",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyC: {
+<<<<<<< HEAD
       first: 'c',
       second: '',
+=======
+      first: "c",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyV: {
+<<<<<<< HEAD
       first: 'v',
       second: '',
+=======
+      first: "v",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyB: {
+<<<<<<< HEAD
       first: 'b',
       second: '',
+=======
+      first: "b",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyN: {
+<<<<<<< HEAD
       first: 'n',
       second: '',
+=======
+      first: "n",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyM: {
+<<<<<<< HEAD
       first: 'm',
       second: '',
+=======
+      first: "m",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Comma: {
+<<<<<<< HEAD
       first: ',',
       second: '<',
+=======
+      first: ",",
+      second: "<",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Period: {
+<<<<<<< HEAD
       first: '.',
       second: '>',
+=======
+      first: ".",
+      second: ">",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Slash: {
+<<<<<<< HEAD
       first: '/',
       second: '?',
+=======
+      first: "/",
+      second: "?",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Space: {
+<<<<<<< HEAD
       first: ' ',
       second: ' ',
+=======
+      first: " ",
+      second: " ",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 3
     }
   },
   ru: {
     Backquote: {
+<<<<<<< HEAD
       first: 'ё',
       second: 'Ё',
+=======
+      first: "ё",
+      second: "Ё",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit1: {
+<<<<<<< HEAD
       first: '1',
       second: '!',
+=======
+      first: "1",
+      second: "!",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit2: {
+<<<<<<< HEAD
       first: '2',
+=======
+      first: "2",
+>>>>>>> 730079e (feat: ready to deploy)
       second: '"',
       func: false,
       size: 1
     },
     Digit3: {
+<<<<<<< HEAD
       first: '3',
       second: '№',
+=======
+      first: "3",
+      second: "№",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit4: {
+<<<<<<< HEAD
       first: '4',
       second: ';',
+=======
+      first: "4",
+      second: ";",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit5: {
+<<<<<<< HEAD
       first: '5',
       second: '%',
+=======
+      first: "5",
+      second: "%",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit6: {
+<<<<<<< HEAD
       first: '6',
       second: ':',
+=======
+      first: "6",
+      second: ":",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit7: {
+<<<<<<< HEAD
       first: '7',
       second: '?',
+=======
+      first: "7",
+      second: "?",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit8: {
+<<<<<<< HEAD
       first: '8',
       second: '*',
+=======
+      first: "8",
+      second: "*",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit9: {
+<<<<<<< HEAD
       first: '9',
       second: '(',
+=======
+      first: "9",
+      second: "(",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Digit0: {
+<<<<<<< HEAD
       first: '0',
       second: ')',
+=======
+      first: "0",
+      second: ")",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Minus: {
+<<<<<<< HEAD
       first: '-',
       second: '_',
+=======
+      first: "-",
+      second: "_",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Equal: {
+<<<<<<< HEAD
       first: '=',
       second: '+',
+=======
+      first: "=",
+      second: "+",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyQ: {
+<<<<<<< HEAD
       first: 'й',
       second: '',
+=======
+      first: "й",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyW: {
+<<<<<<< HEAD
       first: 'ц',
       second: '',
+=======
+      first: "ц",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyE: {
+<<<<<<< HEAD
       first: 'у',
       second: '',
+=======
+      first: "у",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyR: {
+<<<<<<< HEAD
       first: 'к',
       second: '',
+=======
+      first: "к",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyT: {
+<<<<<<< HEAD
       first: 'е',
       second: '',
+=======
+      first: "е",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyY: {
+<<<<<<< HEAD
       first: 'н',
       second: '',
+=======
+      first: "н",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyU: {
+<<<<<<< HEAD
       first: 'г',
       second: '',
+=======
+      first: "г",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyI: {
+<<<<<<< HEAD
       first: 'ш',
       second: '',
+=======
+      first: "ш",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyO: {
+<<<<<<< HEAD
       first: 'щ',
       second: '',
+=======
+      first: "щ",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyP: {
+<<<<<<< HEAD
       first: 'з',
       second: '',
+=======
+      first: "з",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     BracketLeft: {
+<<<<<<< HEAD
       first: 'х',
       second: '',
+=======
+      first: "х",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     BracketRight: {
+<<<<<<< HEAD
       first: 'ъ',
       second: '',
+=======
+      first: "ъ",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyA: {
+<<<<<<< HEAD
       first: 'ф',
       second: '',
+=======
+      first: "ф",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyS: {
+<<<<<<< HEAD
       first: 'ы',
       second: '',
+=======
+      first: "ы",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyD: {
+<<<<<<< HEAD
       first: 'в',
       second: '',
+=======
+      first: "в",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyF: {
+<<<<<<< HEAD
       first: 'а',
       second: '',
+=======
+      first: "а",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyG: {
+<<<<<<< HEAD
       first: 'п',
       second: '',
+=======
+      first: "п",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyH: {
+<<<<<<< HEAD
       first: 'р',
       second: '',
+=======
+      first: "р",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyJ: {
+<<<<<<< HEAD
       first: 'о',
       second: '',
+=======
+      first: "о",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyK: {
+<<<<<<< HEAD
       first: 'л',
       second: '',
+=======
+      first: "л",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyL: {
+<<<<<<< HEAD
       first: 'д',
       second: '',
+=======
+      first: "д",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Semicolon: {
+<<<<<<< HEAD
       first: 'ж',
       second: '',
+=======
+      first: "ж",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Quote: {
+<<<<<<< HEAD
       first: 'э',
+=======
+      first: "э",
+>>>>>>> 730079e (feat: ready to deploy)
       second: '',
       func: false,
       size: 1
     },
     Backslash: {
       first: '\\',
+<<<<<<< HEAD
       second: '/',
+=======
+      second: "/",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyZ: {
+<<<<<<< HEAD
       first: 'я',
       second: '',
+=======
+      first: "я",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyX: {
+<<<<<<< HEAD
       first: 'ч',
       second: '',
+=======
+      first: "ч",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyC: {
+<<<<<<< HEAD
       first: 'с',
       second: '',
+=======
+      first: "с",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyV: {
+<<<<<<< HEAD
       first: 'м',
       second: '',
+=======
+      first: "м",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyB: {
+<<<<<<< HEAD
       first: 'и',
       second: '',
+=======
+      first: "и",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyN: {
+<<<<<<< HEAD
       first: 'т',
       second: '',
+=======
+      first: "т",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     KeyM: {
+<<<<<<< HEAD
       first: 'ь',
       second: '',
+=======
+      first: "ь",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Comma: {
+<<<<<<< HEAD
       first: 'б',
       second: '',
+=======
+      first: "б",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Period: {
+<<<<<<< HEAD
       first: 'ю',
       second: '',
+=======
+      first: "ю",
+      second: "",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Slash: {
+<<<<<<< HEAD
       first: '.',
       second: ',',
+=======
+      first: ".",
+      second: ",",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 1
     },
     Space: {
+<<<<<<< HEAD
       first: ' ',
       second: ' ',
+=======
+      first: " ",
+      second: " ",
+>>>>>>> 730079e (feat: ready to deploy)
       func: false,
       size: 3
     }
@@ -1512,9 +1988,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ capsLockReaction)
 /* harmony export */ });
 function capsLockReaction(elem) {
+<<<<<<< HEAD
   var arrElem = elem.querySelectorAll('p');
 
   if (!elem.classList.contains('key-func')) {
+=======
+  var arrElem = elem.querySelectorAll("p");
+
+  if (!elem.classList.contains("key-func")) {
+>>>>>>> 730079e (feat: ready to deploy)
     if (localStorage.capsLock !== 'false') {
       arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
       elem.dataset.firstValue = arrElem[0].innerHTML.toUpperCase();
@@ -1524,11 +2006,19 @@ function capsLockReaction(elem) {
     }
   }
 
+<<<<<<< HEAD
   document.addEventListener('keydown', function (event) {
     if (event.code === 'CapsLock') {
       console.log('this is caps lock');
 
       if (!elem.classList.contains('key-func')) {
+=======
+  document.addEventListener("keydown", function (event) {
+    if (event.code === "CapsLock") {
+      console.log('this is caps lock');
+
+      if (!elem.classList.contains("key-func")) {
+>>>>>>> 730079e (feat: ready to deploy)
         if (localStorage.capsLock !== 'true') {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
           elem.dataset.firstValue = arrElem[0].innerHTML;
@@ -1553,6 +2043,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
+=======
+function startEventKey() {
+  document.addEventListener("keydown", function (event) {
+    var downKey = document.querySelector("#".concat(event.code));
+
+    if (!downKey.classList.contains("key-func")) {
+      if (event.isTrusted) {
+        event.preventDefault();
+        document.dispatchEvent(new KeyboardEvent("keydown", {
+          code: downKey.dataset.code
+        }));
+      }
+    }
+
+    if (downKey.dataset.code !== "CapsLock") downKey.classList.add("active");
+
+    if (downKey.dataset.code === "CapsLock") {
+      if (localStorage.capsLock === 'true') {
+        localStorage.capsLock = 'false';
+        downKey.classList.remove('active');
+      } else {
+        localStorage.capsLock = 'true';
+        downKey.classList.add('active');
+      }
+    }
+
+    if (downKey.dataset.code === "Tab") addText("\t");
+
+    if (!event.isTrusted) {
+      if (downKey.dataset.code === "Enter") addText("\n");
+      if (downKey.dataset.code === "ArrowLeft") addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === "ArrowRight") addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === "ArrowUp") addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === "ArrowDown") addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === "Delete") addText('', 'next');
+      if (downKey.dataset.code === "Backspace") addText('', 'prev');
+      if (!downKey.classList.contains("key-func")) addText(downKey.dataset.firstValue);
+    }
+  });
+  document.addEventListener("keyup", function (event) {
+    var upKey = document.getElementById(event.code);
+    if (upKey.dataset.code !== "CapsLock") upKey.classList.remove("active");
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startEventKey);
+
+>>>>>>> 730079e (feat: ready to deploy)
 function addText(text) {
   var minus = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'no';
   var textarea = document.querySelector('.keyboard-area');
@@ -1590,6 +2129,7 @@ function addText(text) {
     textarea.selectionEnd = start;
   }
 }
+<<<<<<< HEAD
 
 function startEventKey() {
   document.addEventListener('keydown', function (event) {
@@ -1636,6 +2176,8 @@ function startEventKey() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startEventKey);
+=======
+>>>>>>> 730079e (feat: ready to deploy)
 
 /***/ }),
 
@@ -1733,7 +2275,11 @@ function shiftReaction(elem) {
   document.addEventListener('keyup', function (event) {
     var globalCapsLock = document.querySelector('#CapsLock');
 
+<<<<<<< HEAD
     if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
+=======
+    if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+>>>>>>> 730079e (feat: ready to deploy)
       if (arrElem[1].innerHTML) {
         elem.dataset.firstValue = arrElem[1].innerHTML;
         arrElem[1].classList.toggle('p-second');
@@ -2002,6 +2548,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/capsLockReaction */ "./src/js/capsLockReaction.js");
 /* harmony import */ var _class_key_lang__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./class/key-lang */ "./src/class/key-lang.js");
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 730079e (feat: ready to deploy)
 
 
 
@@ -2023,12 +2573,25 @@ var main = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mai
 main.create();
 var footer = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, 'footer', 'footer');
 footer.create();
+<<<<<<< HEAD
 var screen = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, 'textarea', 'keyboard-area');
 screen.create(); // screen.onblur;
+=======
+var screen = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, "textarea", "keyboard-area");
+screen.create();
+screen.onblur;
+var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, "div", "keyboard");
+keyboard.create();
+
+if (!localStorage.getItem('capsLock')) {
+  localStorage.setItem('capsLock', 'false');
+}
+>>>>>>> 730079e (feat: ready to deploy)
 
 var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, 'div', 'keyboard');
 keyboard.create();
 
+<<<<<<< HEAD
 if (!localStorage.getItem('capsLock')) {
   localStorage.setItem('capsLock', 'false');
 }
@@ -2054,6 +2617,26 @@ function createKeyboard(elementDom, array) {
 if (!localStorage.getItem('language')) localStorage.setItem('language', 'en');
 if (localStorage.getItem('language') === 'en') createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
 if (localStorage.getItem('language') === 'ru') createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
+=======
+  for (var j = 0; j < array.length; j++) {
+    var keyboardFirstLine = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](elem, "div", "keyboard-line");
+    keyboardFirstLine.create(); // startEventMouse(keyboardFirstLine.node);
+
+    for (var i = 0; i < array[j].length; i++) {
+      var key_item = new _class_create_key__WEBPACK_IMPORTED_MODULE_1__["default"](keyboardFirstLine.node, array[j][i].first, array[j][i].second, array[j][i].func, array[j][i].size, array[j][i].data);
+      key_item.create();
+      (0,_js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__["default"])(key_item.node);
+      (0,_js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__["default"])(key_item.node);
+    }
+  }
+
+  (0,_js_eventMouse__WEBPACK_IMPORTED_MODULE_6__["default"])(elem);
+}
+
+if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
+if (localStorage.getItem("language") === "en") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
+if (localStorage.getItem("language") === "ru") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
+>>>>>>> 730079e (feat: ready to deploy)
 (0,_js_event__WEBPACK_IMPORTED_MODULE_5__["default"])();
 (0,_js_eventInput__WEBPACK_IMPORTED_MODULE_7__["default"])(screen.node);
 footer.node.innerHTML = _html_footer_html__WEBPACK_IMPORTED_MODULE_3__["default"];
@@ -2085,7 +2668,10 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
+<<<<<<< HEAD
             return el;
+=======
+>>>>>>> 730079e (feat: ready to deploy)
           });
         } else {
           arr.map(function (el) {
@@ -2094,7 +2680,10 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second;
             el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first;
             el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second;
+<<<<<<< HEAD
             return el;
+=======
+>>>>>>> 730079e (feat: ready to deploy)
           });
         }
       } else if (localStorage.language === 'ru') {
@@ -2108,7 +2697,10 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second.toUpperCase();
+<<<<<<< HEAD
             return el;
+=======
+>>>>>>> 730079e (feat: ready to deploy)
           });
         } else {
           arr.map(function (el) {
@@ -2117,7 +2709,10 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second;
             el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first;
             el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second;
+<<<<<<< HEAD
             return el;
+=======
+>>>>>>> 730079e (feat: ready to deploy)
           });
         }
       }
