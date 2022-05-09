@@ -1,7 +1,7 @@
-function eventForInput(elemInput){
-  document.addEventListener('keydown', ()=>{
+function eventForInput(elemInput) {
+  document.addEventListener('keydown', () => {
     elemInput.focus();
-  })
+  });
 }
 
-export default eventForInput
+export default eventForInput;

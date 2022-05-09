@@ -6,6 +6,7 @@
   },
   "rules": {
       "no-console": "off" ,        //отключил ошибки на логи в консоли
-      "no-plusplus": "off"
+      "no-plusplus": "off",
+      "no-param-reassign": [2, {"props": false}]
   }
 }

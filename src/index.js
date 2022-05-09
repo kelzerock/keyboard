@@ -86,6 +86,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru[`${dataEl}`].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.ru[`${dataEl}`].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.ru[`${dataEl}`].second.toUpperCase();
+            return el;
           });
         } else {
           arr.map((el) => {
@@ -94,6 +95,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru[`${dataEl}`].second;
             el.querySelector('.p-first').innerText = arrayLang.ru[`${dataEl}`].first;
             el.querySelector('.p-second').innerText = arrayLang.ru[`${dataEl}`].second;
+            return el;
           });
         }
       } else if (localStorage.language === 'ru') {
@@ -106,6 +108,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en[`${dataEl}`].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.en[`${dataEl}`].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.en[`${dataEl}`].second.toUpperCase();
+            return el;
           });
         } else {
           arr.map((el) => {
@@ -114,6 +117,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en[`${dataEl}`].second;
             el.querySelector('.p-first').innerText = arrayLang.en[`${dataEl}`].first;
             el.querySelector('.p-second').innerText = arrayLang.en[`${dataEl}`].second;
+            return el;
           });
         }
       }

@@ -78,33 +78,33 @@ var CreateKey = /*#__PURE__*/function () {
     this.size = size;
     this.dataAttr = dataAttr;
     this.shift = shift;
-    this.node = "";
+    this.node = '';
   }
 
   _createClass(CreateKey, [{
     key: "create",
     value: function create() {
-      var elemMain = document.createElement("div");
+      var elemMain = document.createElement('div');
       elemMain.classList.add("key-".concat(this.size));
-      elemMain.classList.add("key");
+      elemMain.classList.add('key');
       elemMain.dataset.code = this.dataAttr;
       elemMain.dataset.firstValue = this.firstIndex;
       elemMain.dataset.secondValue = this.secondIndex;
       elemMain.id = this.dataAttr; // if (!this.secondIndex) elemMain.classList.add("key-one");
 
-      var elemFirst = document.createElement("p");
-      elemFirst.classList.add("p-first");
+      var elemFirst = document.createElement('p');
+      elemFirst.classList.add('p-first');
 
       if (this.func) {
         elemFirst.innerHTML = this.firstIndex;
-        elemMain.classList.add("key-func");
+        elemMain.classList.add('key-func');
       } else {
         elemFirst.innerHTML = this.firstIndex;
       }
 
-      var elemSecond = document.createElement("p");
+      var elemSecond = document.createElement('p');
       elemSecond.innerHTML = this.secondIndex;
-      elemSecond.classList.add("p-second");
+      elemSecond.classList.add('p-second');
       elemMain.append(elemFirst);
       elemMain.append(elemSecond);
       this.node = elemMain;
@@ -132,212 +132,212 @@ __webpack_require__.r(__webpack_exports__);
 var keysLang = {
   en: {
     Backquote: {
-      first: "`",
-      second: "~",
+      first: '`',
+      second: '~',
       func: false,
       size: 1
     },
     Digit1: {
-      first: "1",
-      second: "!",
+      first: '1',
+      second: '!',
       func: false,
       size: 1
     },
     Digit2: {
-      first: "2",
-      second: "@",
+      first: '2',
+      second: '@',
       func: false,
       size: 1
     },
     Digit3: {
-      first: "3",
-      second: "#",
+      first: '3',
+      second: '#',
       func: false,
       size: 1
     },
     Digit4: {
-      first: "4",
-      second: "$",
+      first: '4',
+      second: '$',
       func: false,
       size: 1
     },
     Digit5: {
-      first: "5",
-      second: "%",
+      first: '5',
+      second: '%',
       func: false,
       size: 1
     },
     Digit6: {
-      first: "6",
-      second: "^",
+      first: '6',
+      second: '^',
       func: false,
       size: 1
     },
     Digit7: {
-      first: "7",
-      second: "&",
+      first: '7',
+      second: '&',
       func: false,
       size: 1
     },
     Digit8: {
-      first: "8",
-      second: "*",
+      first: '8',
+      second: '*',
       func: false,
       size: 1
     },
     Digit9: {
-      first: "9",
-      second: "(",
+      first: '9',
+      second: '(',
       func: false,
       size: 1
     },
     Digit0: {
-      first: "0",
-      second: ")",
+      first: '0',
+      second: ')',
       func: false,
       size: 1
     },
     Minus: {
-      first: "-",
-      second: "_",
+      first: '-',
+      second: '_',
       func: false,
       size: 1
     },
     Equal: {
-      first: "=",
-      second: "+",
+      first: '=',
+      second: '+',
       func: false,
       size: 1
     },
     KeyQ: {
-      first: "q",
-      second: "",
+      first: 'q',
+      second: '',
       func: false,
       size: 1
     },
     KeyW: {
-      first: "w",
-      second: "",
+      first: 'w',
+      second: '',
       func: false,
       size: 1
     },
     KeyE: {
-      first: "e",
-      second: "",
+      first: 'e',
+      second: '',
       func: false,
       size: 1
     },
     KeyR: {
-      first: "r",
-      second: "",
+      first: 'r',
+      second: '',
       func: false,
       size: 1
     },
     KeyT: {
-      first: "t",
-      second: "",
+      first: 't',
+      second: '',
       func: false,
       size: 1
     },
     KeyY: {
-      first: "y",
-      second: "",
+      first: 'y',
+      second: '',
       func: false,
       size: 1
     },
     KeyU: {
-      first: "u",
-      second: "",
+      first: 'u',
+      second: '',
       func: false,
       size: 1
     },
     KeyI: {
-      first: "i",
-      second: "",
+      first: 'i',
+      second: '',
       func: false,
       size: 1
     },
     KeyO: {
-      first: "o",
-      second: "",
+      first: 'o',
+      second: '',
       func: false,
       size: 1
     },
     KeyP: {
-      first: "p",
-      second: "",
+      first: 'p',
+      second: '',
       func: false,
       size: 1
     },
     BracketLeft: {
-      first: "[",
-      second: "{",
+      first: '[',
+      second: '{',
       func: false,
       size: 1
     },
     BracketRight: {
-      first: "]",
-      second: "}",
+      first: ']',
+      second: '}',
       func: false,
       size: 1
     },
     KeyA: {
-      first: "a",
-      second: "",
+      first: 'a',
+      second: '',
       func: false,
       size: 1
     },
     KeyS: {
-      first: "s",
-      second: "",
+      first: 's',
+      second: '',
       func: false,
       size: 1
     },
     KeyD: {
-      first: "d",
-      second: "",
+      first: 'd',
+      second: '',
       func: false,
       size: 1
     },
     KeyF: {
-      first: "f",
-      second: "",
+      first: 'f',
+      second: '',
       func: false,
       size: 1
     },
     KeyG: {
-      first: "g",
-      second: "",
+      first: 'g',
+      second: '',
       func: false,
       size: 1
     },
     KeyH: {
-      first: "h",
-      second: "",
+      first: 'h',
+      second: '',
       func: false,
       size: 1
     },
     KeyJ: {
-      first: "j",
-      second: "",
+      first: 'j',
+      second: '',
       func: false,
       size: 1
     },
     KeyK: {
-      first: "k",
-      second: "",
+      first: 'k',
+      second: '',
       func: false,
       size: 1
     },
     KeyL: {
-      first: "l",
-      second: "",
+      first: 'l',
+      second: '',
       func: false,
       size: 1
     },
     Semicolon: {
-      first: ";",
-      second: ":",
+      first: ';',
+      second: ':',
       func: false,
       size: 1
     },
@@ -349,363 +349,363 @@ var keysLang = {
     },
     Backslash: {
       first: '\\',
-      second: "|",
+      second: '|',
       func: false,
       size: 1
     },
     KeyZ: {
-      first: "z",
-      second: "",
+      first: 'z',
+      second: '',
       func: false,
       size: 1
     },
     KeyX: {
-      first: "x",
-      second: "",
+      first: 'x',
+      second: '',
       func: false,
       size: 1
     },
     KeyC: {
-      first: "c",
-      second: "",
+      first: 'c',
+      second: '',
       func: false,
       size: 1
     },
     KeyV: {
-      first: "v",
-      second: "",
+      first: 'v',
+      second: '',
       func: false,
       size: 1
     },
     KeyB: {
-      first: "b",
-      second: "",
+      first: 'b',
+      second: '',
       func: false,
       size: 1
     },
     KeyN: {
-      first: "n",
-      second: "",
+      first: 'n',
+      second: '',
       func: false,
       size: 1
     },
     KeyM: {
-      first: "m",
-      second: "",
+      first: 'm',
+      second: '',
       func: false,
       size: 1
     },
     Comma: {
-      first: ",",
-      second: "<",
+      first: ',',
+      second: '<',
       func: false,
       size: 1
     },
     Period: {
-      first: ".",
-      second: ">",
+      first: '.',
+      second: '>',
       func: false,
       size: 1
     },
     Slash: {
-      first: "/",
-      second: "?",
+      first: '/',
+      second: '?',
       func: false,
       size: 1
     },
     Space: {
-      first: " ",
-      second: " ",
+      first: ' ',
+      second: ' ',
       func: false,
       size: 3
     }
   },
   ru: {
     Backquote: {
-      first: "ё",
-      second: "Ё",
+      first: 'ё',
+      second: 'Ё',
       func: false,
       size: 1
     },
     Digit1: {
-      first: "1",
-      second: "!",
+      first: '1',
+      second: '!',
       func: false,
       size: 1
     },
     Digit2: {
-      first: "2",
+      first: '2',
       second: '"',
       func: false,
       size: 1
     },
     Digit3: {
-      first: "3",
-      second: "№",
+      first: '3',
+      second: '№',
       func: false,
       size: 1
     },
     Digit4: {
-      first: "4",
-      second: ";",
+      first: '4',
+      second: ';',
       func: false,
       size: 1
     },
     Digit5: {
-      first: "5",
-      second: "%",
+      first: '5',
+      second: '%',
       func: false,
       size: 1
     },
     Digit6: {
-      first: "6",
-      second: ":",
+      first: '6',
+      second: ':',
       func: false,
       size: 1
     },
     Digit7: {
-      first: "7",
-      second: "?",
+      first: '7',
+      second: '?',
       func: false,
       size: 1
     },
     Digit8: {
-      first: "8",
-      second: "*",
+      first: '8',
+      second: '*',
       func: false,
       size: 1
     },
     Digit9: {
-      first: "9",
-      second: "(",
+      first: '9',
+      second: '(',
       func: false,
       size: 1
     },
     Digit0: {
-      first: "0",
-      second: ")",
+      first: '0',
+      second: ')',
       func: false,
       size: 1
     },
     Minus: {
-      first: "-",
-      second: "_",
+      first: '-',
+      second: '_',
       func: false,
       size: 1
     },
     Equal: {
-      first: "=",
-      second: "+",
+      first: '=',
+      second: '+',
       func: false,
       size: 1
     },
     KeyQ: {
-      first: "й",
-      second: "",
+      first: 'й',
+      second: '',
       func: false,
       size: 1
     },
     KeyW: {
-      first: "ц",
-      second: "",
+      first: 'ц',
+      second: '',
       func: false,
       size: 1
     },
     KeyE: {
-      first: "у",
-      second: "",
+      first: 'у',
+      second: '',
       func: false,
       size: 1
     },
     KeyR: {
-      first: "к",
-      second: "",
+      first: 'к',
+      second: '',
       func: false,
       size: 1
     },
     KeyT: {
-      first: "е",
-      second: "",
+      first: 'е',
+      second: '',
       func: false,
       size: 1
     },
     KeyY: {
-      first: "н",
-      second: "",
+      first: 'н',
+      second: '',
       func: false,
       size: 1
     },
     KeyU: {
-      first: "г",
-      second: "",
+      first: 'г',
+      second: '',
       func: false,
       size: 1
     },
     KeyI: {
-      first: "ш",
-      second: "",
+      first: 'ш',
+      second: '',
       func: false,
       size: 1
     },
     KeyO: {
-      first: "щ",
-      second: "",
+      first: 'щ',
+      second: '',
       func: false,
       size: 1
     },
     KeyP: {
-      first: "з",
-      second: "",
+      first: 'з',
+      second: '',
       func: false,
       size: 1
     },
     BracketLeft: {
-      first: "х",
-      second: "",
+      first: 'х',
+      second: '',
       func: false,
       size: 1
     },
     BracketRight: {
-      first: "ъ",
-      second: "",
+      first: 'ъ',
+      second: '',
       func: false,
       size: 1
     },
     KeyA: {
-      first: "ф",
-      second: "",
+      first: 'ф',
+      second: '',
       func: false,
       size: 1
     },
     KeyS: {
-      first: "ы",
-      second: "",
+      first: 'ы',
+      second: '',
       func: false,
       size: 1
     },
     KeyD: {
-      first: "в",
-      second: "",
+      first: 'в',
+      second: '',
       func: false,
       size: 1
     },
     KeyF: {
-      first: "а",
-      second: "",
+      first: 'а',
+      second: '',
       func: false,
       size: 1
     },
     KeyG: {
-      first: "п",
-      second: "",
+      first: 'п',
+      second: '',
       func: false,
       size: 1
     },
     KeyH: {
-      first: "р",
-      second: "",
+      first: 'р',
+      second: '',
       func: false,
       size: 1
     },
     KeyJ: {
-      first: "о",
-      second: "",
+      first: 'о',
+      second: '',
       func: false,
       size: 1
     },
     KeyK: {
-      first: "л",
-      second: "",
+      first: 'л',
+      second: '',
       func: false,
       size: 1
     },
     KeyL: {
-      first: "д",
-      second: "",
+      first: 'д',
+      second: '',
       func: false,
       size: 1
     },
     Semicolon: {
-      first: "ж",
-      second: "",
+      first: 'ж',
+      second: '',
       func: false,
       size: 1
     },
     Quote: {
-      first: "э",
+      first: 'э',
       second: '',
       func: false,
       size: 1
     },
     Backslash: {
       first: '\\',
-      second: "/",
+      second: '/',
       func: false,
       size: 1
     },
     KeyZ: {
-      first: "я",
-      second: "",
+      first: 'я',
+      second: '',
       func: false,
       size: 1
     },
     KeyX: {
-      first: "ч",
-      second: "",
+      first: 'ч',
+      second: '',
       func: false,
       size: 1
     },
     KeyC: {
-      first: "с",
-      second: "",
+      first: 'с',
+      second: '',
       func: false,
       size: 1
     },
     KeyV: {
-      first: "м",
-      second: "",
+      first: 'м',
+      second: '',
       func: false,
       size: 1
     },
     KeyB: {
-      first: "и",
-      second: "",
+      first: 'и',
+      second: '',
       func: false,
       size: 1
     },
     KeyN: {
-      first: "т",
-      second: "",
+      first: 'т',
+      second: '',
       func: false,
       size: 1
     },
     KeyM: {
-      first: "ь",
-      second: "",
+      first: 'ь',
+      second: '',
       func: false,
       size: 1
     },
     Comma: {
-      first: "б",
-      second: "",
+      first: 'б',
+      second: '',
       func: false,
       size: 1
     },
     Period: {
-      first: "ю",
-      second: "",
+      first: 'ю',
+      second: '',
       func: false,
       size: 1
     },
     Slash: {
-      first: ".",
-      second: ",",
+      first: '.',
+      second: ',',
       func: false,
       size: 1
     },
     Space: {
-      first: " ",
-      second: " ",
+      first: ' ',
+      second: ' ',
       func: false,
       size: 3
     }
@@ -1512,9 +1512,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ capsLockReaction)
 /* harmony export */ });
 function capsLockReaction(elem) {
-  var arrElem = elem.querySelectorAll("p");
+  var arrElem = elem.querySelectorAll('p');
 
-  if (!elem.classList.contains("key-func")) {
+  if (!elem.classList.contains('key-func')) {
     if (localStorage.capsLock !== 'false') {
       arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
       elem.dataset.firstValue = arrElem[0].innerHTML.toUpperCase();
@@ -1524,11 +1524,11 @@ function capsLockReaction(elem) {
     }
   }
 
-  document.addEventListener("keydown", function (event) {
-    if (event.code === "CapsLock") {
+  document.addEventListener('keydown', function (event) {
+    if (event.code === 'CapsLock') {
       console.log('this is caps lock');
 
-      if (!elem.classList.contains("key-func")) {
+      if (!elem.classList.contains('key-func')) {
         if (localStorage.capsLock !== 'true') {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
           elem.dataset.firstValue = arrElem[0].innerHTML;
@@ -1553,65 +1553,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function startEventKey() {
-  document.addEventListener("keydown", function (event) {
-    var downKey = document.querySelector("#".concat(event.code));
-
-    if (!downKey.classList.contains("key-func")) {
-      if (event.isTrusted) {
-        event.preventDefault();
-        document.dispatchEvent(new KeyboardEvent("keydown", {
-          code: downKey.dataset.code
-        }));
-      }
-    }
-
-    if (downKey.dataset.code !== "CapsLock") downKey.classList.add("active");
-
-    if (downKey.dataset.code === "CapsLock") {
-      if (localStorage.capsLock === 'true') {
-        localStorage.capsLock = 'false';
-        downKey.classList.remove('active');
-      } else {
-        localStorage.capsLock = 'true';
-        downKey.classList.add('active');
-      }
-    }
-
-    if (downKey.dataset.code === "Tab") addText("\t");
-
-    if (!event.isTrusted) {
-      if (downKey.dataset.code === "Enter") addText("\n");
-      if (downKey.dataset.code === "ArrowLeft") addText(downKey.dataset.firstValue);
-      if (downKey.dataset.code === "ArrowRight") addText(downKey.dataset.firstValue);
-      if (downKey.dataset.code === "ArrowUp") addText(downKey.dataset.firstValue);
-      if (downKey.dataset.code === "ArrowDown") addText(downKey.dataset.firstValue);
-      if (downKey.dataset.code === "Delete") addText('', 'next');
-      if (downKey.dataset.code === "Backspace") addText('', 'prev');
-      if (!downKey.classList.contains("key-func")) addText(downKey.dataset.firstValue);
-    }
-  });
-  document.addEventListener("keyup", function (event) {
-    var upKey = document.getElementById(event.code);
-    if (upKey.dataset.code !== "CapsLock") upKey.classList.remove("active");
-  });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startEventKey);
-
 function addText(text) {
-  var minus = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "no";
-  var textarea = document.querySelector(".keyboard-area");
+  var minus = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'no';
+  var textarea = document.querySelector('.keyboard-area');
   var start = textarea.selectionStart;
   var end = textarea.selectionEnd;
 
-  if (minus === "no") {
+  if (minus === 'no') {
     textarea.value = textarea.value.slice(0, start) + text + textarea.value.slice(end);
     textarea.selectionStart = start + 1;
     textarea.selectionEnd = start + 1;
   }
 
-  if (minus === "prev") {
+  if (minus === 'prev') {
     if (start === end) {
       if (start > 0) {
         textarea.value = textarea.value.slice(0, start - 1) + textarea.value.slice(end);
@@ -1625,7 +1579,7 @@ function addText(text) {
     }
   }
 
-  if (minus === "next") {
+  if (minus === 'next') {
     if (start === end) {
       textarea.value = textarea.value.slice(0, start) + textarea.value.slice(end + 1);
     } else {
@@ -1636,6 +1590,52 @@ function addText(text) {
     textarea.selectionEnd = start;
   }
 }
+
+function startEventKey() {
+  document.addEventListener('keydown', function (event) {
+    var downKey = document.querySelector("#".concat(event.code));
+
+    if (!downKey.classList.contains('key-func')) {
+      if (event.isTrusted) {
+        event.preventDefault();
+        document.dispatchEvent(new KeyboardEvent('keydown', {
+          code: downKey.dataset.code
+        }));
+      }
+    }
+
+    if (downKey.dataset.code !== 'CapsLock') downKey.classList.add('active');
+
+    if (downKey.dataset.code === 'CapsLock') {
+      if (localStorage.capsLock === 'true') {
+        localStorage.capsLock = 'false';
+        downKey.classList.remove('active');
+      } else {
+        localStorage.capsLock = 'true';
+        downKey.classList.add('active');
+      }
+    }
+
+    if (downKey.dataset.code === 'Tab') addText('\t');
+
+    if (!event.isTrusted) {
+      if (downKey.dataset.code === 'Enter') addText('\n');
+      if (downKey.dataset.code === 'ArrowLeft') addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === 'ArrowRight') addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === 'ArrowUp') addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === 'ArrowDown') addText(downKey.dataset.firstValue);
+      if (downKey.dataset.code === 'Delete') addText('', 'next');
+      if (downKey.dataset.code === 'Backspace') addText('', 'prev');
+      if (!downKey.classList.contains('key-func')) addText(downKey.dataset.firstValue);
+    }
+  });
+  document.addEventListener('keyup', function (event) {
+    var upKey = document.getElementById(event.code);
+    if (upKey.dataset.code !== 'CapsLock') upKey.classList.remove('active');
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startEventKey);
 
 /***/ }),
 
@@ -1670,14 +1670,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function startEventMouse(elemHTML) {
-  elemHTML.addEventListener("mousedown", function (event) {
+  elemHTML.addEventListener('mousedown', function (event) {
     if (elemHTML !== event.target) {
-      var nameEvent = event.target.closest(".key").dataset.code;
-      document.dispatchEvent(new KeyboardEvent("keydown", {
+      var nameEvent = event.target.closest('.key').dataset.code;
+      document.dispatchEvent(new KeyboardEvent('keydown', {
         code: nameEvent
       }));
-      document.addEventListener("mouseup", function () {
-        document.dispatchEvent(new KeyboardEvent("keyup", {
+      document.addEventListener('mouseup', function () {
+        document.dispatchEvent(new KeyboardEvent('keyup', {
           code: nameEvent
         }));
       });
@@ -1700,22 +1700,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ shiftReaction)
 /* harmony export */ });
 function shiftReaction(elem) {
-  var arrElem = elem.querySelectorAll("p");
-  document.addEventListener("keydown", function (event) {
-    var globalCapsLock = document.querySelector("#CapsLock");
+  var arrElem = elem.querySelectorAll('p');
+  document.addEventListener('keydown', function (event) {
+    var globalCapsLock = document.querySelector('#CapsLock');
 
-    if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+    if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
       if (arrElem[1].innerHTML) {
         elem.dataset.firstValue = elem.dataset.secondValue; // elem.dataset.firstValue = arrElem[1].innerHTML
 
-        arrElem[1].classList.toggle("p-second");
-        arrElem[1].classList.toggle("p-first");
-        arrElem[0].classList.toggle("p-first");
-        arrElem[0].classList.toggle("p-second");
+        arrElem[1].classList.toggle('p-second');
+        arrElem[1].classList.toggle('p-first');
+        arrElem[0].classList.toggle('p-first');
+        arrElem[0].classList.toggle('p-second');
       }
 
-      if (!elem.classList.contains("key-func")) {
-        if (!globalCapsLock.classList.contains("active")) {
+      if (!elem.classList.contains('key-func')) {
+        if (!globalCapsLock.classList.contains('active')) {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
         } else {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toLowerCase();
@@ -1730,20 +1730,20 @@ function shiftReaction(elem) {
       }
     }
   });
-  document.addEventListener("keyup", function (event) {
-    var globalCapsLock = document.querySelector("#CapsLock");
+  document.addEventListener('keyup', function (event) {
+    var globalCapsLock = document.querySelector('#CapsLock');
 
-    if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+    if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
       if (arrElem[1].innerHTML) {
         elem.dataset.firstValue = arrElem[1].innerHTML;
-        arrElem[1].classList.toggle("p-second");
-        arrElem[1].classList.toggle("p-first");
-        arrElem[0].classList.toggle("p-first");
-        arrElem[0].classList.toggle("p-second");
+        arrElem[1].classList.toggle('p-second');
+        arrElem[1].classList.toggle('p-first');
+        arrElem[0].classList.toggle('p-first');
+        arrElem[0].classList.toggle('p-second');
       }
 
-      if (!elem.classList.contains("key-func")) {
-        if (!globalCapsLock.classList.contains("active")) {
+      if (!elem.classList.contains('key-func')) {
+        if (!globalCapsLock.classList.contains('active')) {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toLowerCase();
         } else {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
@@ -2014,53 +2014,53 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var mainWrapper = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](document.body, "div", "main-wrapper");
+var mainWrapper = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](document.body, 'div', 'main-wrapper');
 mainWrapper.create();
-var header = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, "header", "header");
+var header = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, 'header', 'header');
 header.create();
 header.node.innerHTML = _html_head_html__WEBPACK_IMPORTED_MODULE_4__["default"];
-var main = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, "main", "main");
+var main = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, 'main', 'main');
 main.create();
-var footer = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, "footer", "footer");
+var footer = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](mainWrapper.node, 'footer', 'footer');
 footer.create();
-var screen = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, "textarea", "keyboard-area");
-screen.create();
-screen.onblur;
-var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, "div", "keyboard");
+var screen = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, 'textarea', 'keyboard-area');
+screen.create(); // screen.onblur;
+
+var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, 'div', 'keyboard');
 keyboard.create();
 
 if (!localStorage.getItem('capsLock')) {
   localStorage.setItem('capsLock', 'false');
 }
 
-function createKeyboard(elem, array) {
-  elem.innerHTML = "";
+function createKeyboard(elementDom, array) {
+  elementDom.innerHTML = '';
 
   for (var j = 0; j < array.length; j++) {
-    var keyboardFirstLine = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](elem, "div", "keyboard-line");
+    var keyboardFirstLine = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](elementDom, 'div', 'keyboard-line');
     keyboardFirstLine.create(); // startEventMouse(keyboardFirstLine.node);
 
     for (var i = 0; i < array[j].length; i++) {
-      var key_item = new _class_create_key__WEBPACK_IMPORTED_MODULE_1__["default"](keyboardFirstLine.node, array[j][i].first, array[j][i].second, array[j][i].func, array[j][i].size, array[j][i].data);
-      key_item.create();
-      (0,_js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__["default"])(key_item.node);
-      (0,_js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__["default"])(key_item.node);
+      var keyItem = new _class_create_key__WEBPACK_IMPORTED_MODULE_1__["default"](keyboardFirstLine.node, array[j][i].first, array[j][i].second, array[j][i].func, array[j][i].size, array[j][i].data);
+      keyItem.create();
+      (0,_js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__["default"])(keyItem.node);
+      (0,_js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__["default"])(keyItem.node);
     }
   }
 
-  (0,_js_eventMouse__WEBPACK_IMPORTED_MODULE_6__["default"])(elem);
+  (0,_js_eventMouse__WEBPACK_IMPORTED_MODULE_6__["default"])(elementDom);
 }
 
-if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
-if (localStorage.getItem("language") === "en") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
-if (localStorage.getItem("language") === "ru") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
+if (!localStorage.getItem('language')) localStorage.setItem('language', 'en');
+if (localStorage.getItem('language') === 'en') createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
+if (localStorage.getItem('language') === 'ru') createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
 (0,_js_event__WEBPACK_IMPORTED_MODULE_5__["default"])();
 (0,_js_eventInput__WEBPACK_IMPORTED_MODULE_7__["default"])(screen.node);
 footer.node.innerHTML = _html_footer_html__WEBPACK_IMPORTED_MODULE_3__["default"];
 
 function changeLanguage(keyBoard, arrayLang) {
   var arrKey = [];
-  document.addEventListener("keydown", function (event) {
+  document.addEventListener('keydown', function (event) {
     var code = event.which;
 
     if (arrKey.indexOf(code) < 0) {
@@ -2085,6 +2085,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
+            return el;
           });
         } else {
           arr.map(function (el) {
@@ -2093,6 +2094,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second;
             el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first;
             el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second;
+            return el;
           });
         }
       } else if (localStorage.language === 'ru') {
@@ -2106,6 +2108,7 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second.toUpperCase();
             el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first.toUpperCase();
             el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second.toUpperCase();
+            return el;
           });
         } else {
           arr.map(function (el) {
@@ -2114,12 +2117,13 @@ function changeLanguage(keyBoard, arrayLang) {
             el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second;
             el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first;
             el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second;
+            return el;
           });
         }
       }
     }
   });
-  document.addEventListener("keyup", function (e) {
+  document.addEventListener('keyup', function (e) {
     arrKey.splice(arrKey.indexOf(e.which), 1);
   });
 }
