@@ -84,26 +84,48 @@ function changeLanguage(keyBoard, arrayLang) {
         });
 
       if(localStorage.language === 'en'){
-        localStorage.capsLock = 'false'
+        // localStorage.capsLock = 'false'
         localStorage.language = 'ru'
-
-        arr.map(el=>{          
+        if(localStorage.capsLock === 'true'){
+          arr.map(el=>{          
+            const dataEl = el.dataset.code
+            el.dataset.firstValue = arrayLang.ru[`${dataEl}`].first.toUpperCase()
+            el.dataset.secondValue = arrayLang.ru[`${dataEl}`].second.toUpperCase()
+            el.querySelector('.p-first').innerText = arrayLang.ru[`${dataEl}`].first.toUpperCase()
+            el.querySelector('.p-second').innerText = arrayLang.ru[`${dataEl}`].second.toUpperCase()
+          }) 
+        } else {
+                  arr.map(el=>{          
           const dataEl = el.dataset.code
           el.dataset.firstValue = arrayLang.ru[`${dataEl}`].first
           el.dataset.secondValue = arrayLang.ru[`${dataEl}`].second
           el.querySelector('.p-first').innerText = arrayLang.ru[`${dataEl}`].first
           el.querySelector('.p-second').innerText = arrayLang.ru[`${dataEl}`].second
-        })      
+        })  
+        }
+    
       } else if(localStorage.language === 'ru'){
-        localStorage.capsLock = 'false';
+        // localStorage.capsLock = 'false';
         localStorage.language = 'en';
-                arr.map(el=>{
+        if(localStorage.capsLock === 'true'){
+          arr.map(el=>{
+            const dataEl = el.dataset.code
+            el.dataset.firstValue = arrayLang.en[`${dataEl}`].first.toUpperCase()
+            el.dataset.secondValue = arrayLang.en[`${dataEl}`].second.toUpperCase()
+            el.querySelector('.p-first').innerText = arrayLang.en[`${dataEl}`].first.toUpperCase()
+            el.querySelector('.p-second').innerText = arrayLang.en[`${dataEl}`].second.toUpperCase()
+          })
+        }else{
+                          arr.map(el=>{
           const dataEl = el.dataset.code
           el.dataset.firstValue = arrayLang.en[`${dataEl}`].first
           el.dataset.secondValue = arrayLang.en[`${dataEl}`].second
           el.querySelector('.p-first').innerText = arrayLang.en[`${dataEl}`].first
           el.querySelector('.p-second').innerText = arrayLang.en[`${dataEl}`].second
         })
+        }
+
+
       }
     }
 
