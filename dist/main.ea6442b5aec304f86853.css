@@ -75,15 +75,17 @@ body * {
 }
 .keyboard .keyboard-line .key .p-first {
   position: absolute;
-  top: 12px;
-  left: 16px;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
 }
 .keyboard .keyboard-line .key .p-second {
   color: wheat;
   position: absolute;
-  top: 3px;
-  left: 6px;
-  font-size: 0.7em;
+  top: 4px;
+  left: 7px;
+  font-size: 0.5em;
 }
 .keyboard .keyboard-line .key.active {
   background-color: white;
@@ -154,4 +156,4 @@ body * {
   background-color: #ffffb3;
 }
 
-/*# sourceMappingURL=main.48689e60e31826674790.css.map*/
+/*# sourceMappingURL=main.ea6442b5aec304f86853.css.map*/

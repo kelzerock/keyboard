@@ -90,8 +90,8 @@ var CreateKey = /*#__PURE__*/function () {
       elemMain.dataset.code = this.dataAttr;
       elemMain.dataset.firstValue = this.firstIndex;
       elemMain.dataset.secondValue = this.secondIndex;
-      elemMain.id = this.dataAttr;
-      if (!this.secondIndex) elemMain.classList.add("key-one");
+      elemMain.id = this.dataAttr; // if (!this.secondIndex) elemMain.classList.add("key-one");
+
       var elemFirst = document.createElement("p");
       elemFirst.classList.add("p-first");
 
@@ -116,6 +116,602 @@ var CreateKey = /*#__PURE__*/function () {
 }();
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateKey);
+
+/***/ }),
+
+/***/ "./src/class/key-lang.js":
+/*!*******************************!*\
+  !*** ./src/class/key-lang.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var keysLang = {
+  en: {
+    Backquote: {
+      first: "`",
+      second: "~",
+      func: false,
+      size: 1
+    },
+    Digit1: {
+      first: "1",
+      second: "!",
+      func: false,
+      size: 1
+    },
+    Digit2: {
+      first: "2",
+      second: "@",
+      func: false,
+      size: 1
+    },
+    Digit3: {
+      first: "3",
+      second: "#",
+      func: false,
+      size: 1
+    },
+    Digit4: {
+      first: "4",
+      second: "$",
+      func: false,
+      size: 1
+    },
+    Digit5: {
+      first: "5",
+      second: "%",
+      func: false,
+      size: 1
+    },
+    Digit6: {
+      first: "6",
+      second: "^",
+      func: false,
+      size: 1
+    },
+    Digit7: {
+      first: "7",
+      second: "&",
+      func: false,
+      size: 1
+    },
+    Digit8: {
+      first: "8",
+      second: "*",
+      func: false,
+      size: 1
+    },
+    Digit9: {
+      first: "9",
+      second: "(",
+      func: false,
+      size: 1
+    },
+    Digit0: {
+      first: "0",
+      second: ")",
+      func: false,
+      size: 1
+    },
+    Minus: {
+      first: "-",
+      second: "_",
+      func: false,
+      size: 1
+    },
+    Equal: {
+      first: "=",
+      second: "+",
+      func: false,
+      size: 1
+    },
+    KeyQ: {
+      first: "q",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyW: {
+      first: "w",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyE: {
+      first: "e",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyR: {
+      first: "r",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyT: {
+      first: "t",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyY: {
+      first: "y",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyU: {
+      first: "u",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyI: {
+      first: "i",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyO: {
+      first: "o",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyP: {
+      first: "p",
+      second: "",
+      func: false,
+      size: 1
+    },
+    BracketLeft: {
+      first: "[",
+      second: "{",
+      func: false,
+      size: 1
+    },
+    BracketRight: {
+      first: "]",
+      second: "}",
+      func: false,
+      size: 1
+    },
+    KeyA: {
+      first: "a",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyS: {
+      first: "s",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyD: {
+      first: "d",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyF: {
+      first: "f",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyG: {
+      first: "g",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyH: {
+      first: "h",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyJ: {
+      first: "j",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyK: {
+      first: "k",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyL: {
+      first: "l",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Semicolon: {
+      first: ";",
+      second: ":",
+      func: false,
+      size: 1
+    },
+    Quote: {
+      first: "'",
+      second: '"',
+      func: false,
+      size: 1
+    },
+    Backslash: {
+      first: '\\',
+      second: "|",
+      func: false,
+      size: 1
+    },
+    KeyZ: {
+      first: "z",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyX: {
+      first: "x",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyC: {
+      first: "c",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyV: {
+      first: "v",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyB: {
+      first: "b",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyN: {
+      first: "n",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyM: {
+      first: "m",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Comma: {
+      first: ",",
+      second: "<",
+      func: false,
+      size: 1
+    },
+    Period: {
+      first: ".",
+      second: ">",
+      func: false,
+      size: 1
+    },
+    Slash: {
+      first: "/",
+      second: "?",
+      func: false,
+      size: 1
+    },
+    Space: {
+      first: " ",
+      second: " ",
+      func: false,
+      size: 3
+    }
+  },
+  ru: {
+    Backquote: {
+      first: "ё",
+      second: "Ё",
+      func: false,
+      size: 1
+    },
+    Digit1: {
+      first: "1",
+      second: "!",
+      func: false,
+      size: 1
+    },
+    Digit2: {
+      first: "2",
+      second: '"',
+      func: false,
+      size: 1
+    },
+    Digit3: {
+      first: "3",
+      second: "№",
+      func: false,
+      size: 1
+    },
+    Digit4: {
+      first: "4",
+      second: ";",
+      func: false,
+      size: 1
+    },
+    Digit5: {
+      first: "5",
+      second: "%",
+      func: false,
+      size: 1
+    },
+    Digit6: {
+      first: "6",
+      second: ":",
+      func: false,
+      size: 1
+    },
+    Digit7: {
+      first: "7",
+      second: "?",
+      func: false,
+      size: 1
+    },
+    Digit8: {
+      first: "8",
+      second: "*",
+      func: false,
+      size: 1
+    },
+    Digit9: {
+      first: "9",
+      second: "(",
+      func: false,
+      size: 1
+    },
+    Digit0: {
+      first: "0",
+      second: ")",
+      func: false,
+      size: 1
+    },
+    Minus: {
+      first: "-",
+      second: "_",
+      func: false,
+      size: 1
+    },
+    Equal: {
+      first: "=",
+      second: "+",
+      func: false,
+      size: 1
+    },
+    KeyQ: {
+      first: "й",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyW: {
+      first: "ц",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyE: {
+      first: "у",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyR: {
+      first: "к",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyT: {
+      first: "е",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyY: {
+      first: "н",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyU: {
+      first: "г",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyI: {
+      first: "ш",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyO: {
+      first: "щ",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyP: {
+      first: "з",
+      second: "",
+      func: false,
+      size: 1
+    },
+    BracketLeft: {
+      first: "х",
+      second: "",
+      func: false,
+      size: 1
+    },
+    BracketRight: {
+      first: "ъ",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyA: {
+      first: "ф",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyS: {
+      first: "ы",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyD: {
+      first: "в",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyF: {
+      first: "а",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyG: {
+      first: "п",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyH: {
+      first: "р",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyJ: {
+      first: "о",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyK: {
+      first: "л",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyL: {
+      first: "д",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Semicolon: {
+      first: "ж",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Quote: {
+      first: "э",
+      second: '',
+      func: false,
+      size: 1
+    },
+    Backslash: {
+      first: '\\',
+      second: "/",
+      func: false,
+      size: 1
+    },
+    KeyZ: {
+      first: "я",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyX: {
+      first: "ч",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyC: {
+      first: "с",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyV: {
+      first: "м",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyB: {
+      first: "и",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyN: {
+      first: "т",
+      second: "",
+      func: false,
+      size: 1
+    },
+    KeyM: {
+      first: "ь",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Comma: {
+      first: "б",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Period: {
+      first: "ю",
+      second: "",
+      func: false,
+      size: 1
+    },
+    Slash: {
+      first: ".",
+      second: ",",
+      func: false,
+      size: 1
+    },
+    Space: {
+      first: " ",
+      second: " ",
+      func: false,
+      size: 3
+    }
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (keysLang);
 
 /***/ }),
 
@@ -917,12 +1513,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function capsLockReaction(elem) {
   var arrElem = elem.querySelectorAll("p");
-  document.addEventListener("keydown", function (event) {
-    var globalCapsLock = document.querySelector('#CapsLock');
 
+  if (!elem.classList.contains("key-func")) {
+    if (localStorage.capsLock !== 'false') {
+      arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
+      elem.dataset.firstValue = arrElem[0].innerHTML.toUpperCase();
+    } else {
+      arrElem[0].innerHTML = arrElem[0].innerHTML.toLowerCase();
+      elem.dataset.firstValue = arrElem[0].innerHTML.toLowerCase();
+    }
+  }
+
+  document.addEventListener("keydown", function (event) {
     if (event.code === "CapsLock") {
+      console.log('this is caps lock');
+
       if (!elem.classList.contains("key-func")) {
-        if (!globalCapsLock.classList.contains('active')) {
+        if (localStorage.capsLock !== 'true') {
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
           elem.dataset.firstValue = arrElem[0].innerHTML;
         } else {
@@ -960,7 +1567,17 @@ function startEventKey() {
     }
 
     if (downKey.dataset.code !== "CapsLock") downKey.classList.add("active");
-    if (downKey.dataset.code === "CapsLock") downKey.classList.toggle("active");
+
+    if (downKey.dataset.code === "CapsLock") {
+      if (localStorage.capsLock === 'true') {
+        localStorage.capsLock = 'false';
+        downKey.classList.remove('active');
+      } else {
+        localStorage.capsLock = 'true';
+        downKey.classList.add('active');
+      }
+    }
+
     if (downKey.dataset.code === "Tab") addText("\t");
 
     if (!event.isTrusted) {
@@ -971,7 +1588,7 @@ function startEventKey() {
       if (downKey.dataset.code === "ArrowDown") addText(downKey.dataset.firstValue);
       if (downKey.dataset.code === "Delete") addText('', 'next');
       if (downKey.dataset.code === "Backspace") addText('', 'prev');
-      if (!downKey.classList.contains("key-func")) addText(String(downKey.dataset.firstValue)); // elem.value += downKey.dataset.firstValue;
+      if (!downKey.classList.contains("key-func")) addText(downKey.dataset.firstValue);
     }
   });
   document.addEventListener("keyup", function (event) {
@@ -1018,22 +1635,7 @@ function addText(text) {
     textarea.selectionStart = start;
     textarea.selectionEnd = start;
   }
-} // if (evt.target.closest(".backspace") === button) {
-//   const { value } = textarea;
-//   const start = textarea.selectionStart;
-//   const end = textarea.selectionEnd;
-// }
-// if (evt.target.closest(".del") === button) {
-//   const { value } = textarea;
-//   const start = textarea.selectionStart;
-//   const end = textarea.selectionEnd;
-//   textarea.value =
-//     start === end
-//       ? value.slice(0, start) + value.slice(end + 1)
-//       : value.slice(0, start) + value.slice(end);
-//   textarea.selectionStart = start;
-//   textarea.selectionEnd = start;
-// }
+}
 
 /***/ }),
 
@@ -1132,7 +1734,6 @@ function shiftReaction(elem) {
     var globalCapsLock = document.querySelector("#CapsLock");
 
     if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
-      // console.log('hi')
       if (arrElem[1].innerHTML) {
         elem.dataset.firstValue = arrElem[1].innerHTML;
         arrElem[1].classList.toggle("p-second");
@@ -1399,7 +2000,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_eventInput__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/eventInput */ "./src/js/eventInput.js");
 /* harmony import */ var _js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/shiftReaction */ "./src/js/shiftReaction.js");
 /* harmony import */ var _js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/capsLockReaction */ "./src/js/capsLockReaction.js");
-/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
+/* harmony import */ var _class_key_lang__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./class/key-lang */ "./src/class/key-lang.js");
+/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
 
 
 
@@ -1410,7 +2012,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import "./css/keyboard.scss";
+
 
 var mainWrapper = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](document.body, "div", "main-wrapper");
 mainWrapper.create();
@@ -1425,33 +2027,38 @@ var screen = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](m
 screen.create();
 screen.onblur;
 var keyboard = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](main.node, "div", "keyboard");
-keyboard.create(); // startEventMouse(keyboard.node);
+keyboard.create();
+
+if (!localStorage.getItem('capsLock')) {
+  localStorage.setItem('capsLock', 'false');
+}
 
 function createKeyboard(elem, array) {
   elem.innerHTML = "";
 
   for (var j = 0; j < array.length; j++) {
     var keyboardFirstLine = new _class_create_element__WEBPACK_IMPORTED_MODULE_0__["default"](elem, "div", "keyboard-line");
-    keyboardFirstLine.create();
-    (0,_js_eventMouse__WEBPACK_IMPORTED_MODULE_6__["default"])(keyboardFirstLine.node);
+    keyboardFirstLine.create(); // startEventMouse(keyboardFirstLine.node);
 
     for (var i = 0; i < array[j].length; i++) {
       var key_item = new _class_create_key__WEBPACK_IMPORTED_MODULE_1__["default"](keyboardFirstLine.node, array[j][i].first, array[j][i].second, array[j][i].func, array[j][i].size, array[j][i].data);
       key_item.create();
-      (0,_js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__["default"])(key_item.node);
       (0,_js_capsLockReaction__WEBPACK_IMPORTED_MODULE_9__["default"])(key_item.node);
+      (0,_js_shiftReaction__WEBPACK_IMPORTED_MODULE_8__["default"])(key_item.node);
     }
   }
+
+  (0,_js_eventMouse__WEBPACK_IMPORTED_MODULE_6__["default"])(elem);
 }
 
 if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
 if (localStorage.getItem("language") === "en") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
 if (localStorage.getItem("language") === "ru") createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
-(0,_js_event__WEBPACK_IMPORTED_MODULE_5__["default"])(screen.node);
+(0,_js_event__WEBPACK_IMPORTED_MODULE_5__["default"])();
 (0,_js_eventInput__WEBPACK_IMPORTED_MODULE_7__["default"])(screen.node);
 footer.node.innerHTML = _html_footer_html__WEBPACK_IMPORTED_MODULE_3__["default"];
 
-function changeLanguage() {
+function changeLanguage(keyBoard, arrayLang) {
   var arrKey = [];
   document.addEventListener("keydown", function (event) {
     var code = event.which;
@@ -1461,22 +2068,63 @@ function changeLanguage() {
     }
 
     if (event.ctrlKey && event.altKey) {
+      var nodeKey = keyBoard.querySelectorAll('.key');
+      var arr = [];
+      Array.from(nodeKey).forEach(function (el) {
+        if (!el.classList.contains('key-func')) arr.push(el);
+      });
+
       if (localStorage.language === 'en') {
-        createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].ru);
+        // localStorage.capsLock = 'false'
         localStorage.language = 'ru';
+
+        if (localStorage.capsLock === 'true') {
+          arr.map(function (el) {
+            var dataEl = el.dataset.code;
+            el.dataset.firstValue = arrayLang.ru["".concat(dataEl)].first.toUpperCase();
+            el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
+            el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first.toUpperCase();
+            el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second.toUpperCase();
+          });
+        } else {
+          arr.map(function (el) {
+            var dataEl = el.dataset.code;
+            el.dataset.firstValue = arrayLang.ru["".concat(dataEl)].first;
+            el.dataset.secondValue = arrayLang.ru["".concat(dataEl)].second;
+            el.querySelector('.p-first').innerText = arrayLang.ru["".concat(dataEl)].first;
+            el.querySelector('.p-second').innerText = arrayLang.ru["".concat(dataEl)].second;
+          });
+        }
       } else if (localStorage.language === 'ru') {
-        createKeyboard(keyboard.node, _class_key__WEBPACK_IMPORTED_MODULE_2__["default"].en);
+        // localStorage.capsLock = 'false';
         localStorage.language = 'en';
+
+        if (localStorage.capsLock === 'true') {
+          arr.map(function (el) {
+            var dataEl = el.dataset.code;
+            el.dataset.firstValue = arrayLang.en["".concat(dataEl)].first.toUpperCase();
+            el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second.toUpperCase();
+            el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first.toUpperCase();
+            el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second.toUpperCase();
+          });
+        } else {
+          arr.map(function (el) {
+            var dataEl = el.dataset.code;
+            el.dataset.firstValue = arrayLang.en["".concat(dataEl)].first;
+            el.dataset.secondValue = arrayLang.en["".concat(dataEl)].second;
+            el.querySelector('.p-first').innerText = arrayLang.en["".concat(dataEl)].first;
+            el.querySelector('.p-second').innerText = arrayLang.en["".concat(dataEl)].second;
+          });
+        }
       }
     }
   });
   document.addEventListener("keyup", function (e) {
     arrKey.splice(arrKey.indexOf(e.which), 1);
   });
-  console.log(Boolean(arrKey.includes(16) && arrKey.includes(18)));
 }
 
-changeLanguage();
+changeLanguage(keyboard.node, _class_key_lang__WEBPACK_IMPORTED_MODULE_10__["default"]);
 })();
 
 /******/ })()
