@@ -26,7 +26,7 @@ class CreateKey {
     elemMain.dataset.firstValue = this.firstIndex;
     elemMain.dataset.secondValue = this.secondIndex;
     elemMain.id = this.dataAttr;
-    if (!this.secondIndex) elemMain.classList.add("key-one");
+    // if (!this.secondIndex) elemMain.classList.add("key-one");
     const elemFirst = document.createElement("p");
     elemFirst.classList.add("p-first");
     if (this.func) {
@@ -46,6 +46,7 @@ class CreateKey {
     this.node = elemMain;
     this.parentNode.append(elemMain);
   }
+
 }
 
 export default CreateKey;

@@ -11,11 +11,6 @@ function startEventKey() {
     }
     if (downKey.dataset.code !== "CapsLock") downKey.classList.add("active");
     if (downKey.dataset.code === "CapsLock"){ 
-      //  if(downKey.classList.contains("active")){
-      //    downKey.classList.remove('active')
-      //  }else {
-      //    downKey.classList.add('active')
-      //  }
       if(localStorage.capsLock === 'true'){
         localStorage.capsLock = 'false';
         downKey.classList.remove('active')
@@ -41,7 +36,6 @@ function startEventKey() {
         addText('', 'prev');
       if (!downKey.classList.contains("key-func"))
         addText(downKey.dataset.firstValue);
-      // elem.value += downKey.dataset.firstValue;
     }
   });
 

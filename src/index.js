@@ -8,9 +8,9 @@ import startEventMouse from "./js/eventMouse";
 import eventForInput from "./js/eventInput";
 import shiftReaction from "./js/shiftReaction";
 import capsLockReaction from "./js/capsLockReaction";
+import keysLang from "./class/key-lang";
 
 import "./css/style.scss";
-// import "./css/keyboard.scss";
 
 const mainWrapper = new CreateItem(document.body, "div", "main-wrapper");
 mainWrapper.create();
@@ -26,7 +26,6 @@ screen.create();
 screen.onblur;
 const keyboard = new CreateItem(main.node, "div", "keyboard");
 keyboard.create();
-// startEventMouse(keyboard.node);
 
 if(!localStorage.getItem('capsLock')){
   localStorage.setItem('capsLock', 'false')
@@ -52,15 +51,8 @@ function createKeyboard(elem, array) {
       capsLockReaction(key_item.node);
       shiftReaction(key_item.node);
     }
-    // startEventMouse(keyboardFirstLine.node);
   }
-  startEventMouse(elem);
-  console.log(localStorage.capsLock)
-  if(localStorage.capsLock === 'true'){
-    console.log('active')
-    document.querySelector('#CapsLock').classList.add('active')
-  }
-  
+  startEventMouse(elem); 
 }
 
 if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
@@ -70,11 +62,11 @@ if (localStorage.getItem("language") === "ru")
   createKeyboard(keyboard.node, keysForKeyboard.ru);
 
 
-startEventKey(screen.node);
+startEventKey();
 eventForInput(screen.node);
 footer.node.innerHTML = templateFooter;
 
-function changeLanguage() {
+function changeLanguage(keyBoard, arrayLang) {
 
   const arrKey = [];
   document.addEventListener("keydown", (event) => {
@@ -83,18 +75,35 @@ function changeLanguage() {
       arrKey.push(code);
     }
     if(event.ctrlKey && event.altKey){
+
+
+        const nodeKey = keyBoard.querySelectorAll('.key')
+        const arr = []
+        Array.from(nodeKey).forEach(el=>{
+          if(!el.classList.contains('key-func')) arr.push(el);
+        });
+
       if(localStorage.language === 'en'){
         localStorage.capsLock = 'false'
         localStorage.language = 'ru'
-        document.location.reload();
-        createKeyboard(keyboard.node, keysForKeyboard.ru);
-        
+
+        arr.map(el=>{          
+          const dataEl = el.dataset.code
+          el.dataset.firstValue = arrayLang.ru[`${dataEl}`].first
+          el.dataset.secondValue = arrayLang.ru[`${dataEl}`].second
+          el.querySelector('.p-first').innerText = arrayLang.ru[`${dataEl}`].first
+          el.querySelector('.p-second').innerText = arrayLang.ru[`${dataEl}`].second
+        })      
       } else if(localStorage.language === 'ru'){
-        localStorage.capsLock = 'false'
-        localStorage.language = 'en'
-        document.location.reload();
-        createKeyboard(keyboard.node, keysForKeyboard.en);
-        
+        localStorage.capsLock = 'false';
+        localStorage.language = 'en';
+                arr.map(el=>{
+          const dataEl = el.dataset.code
+          el.dataset.firstValue = arrayLang.en[`${dataEl}`].first
+          el.dataset.secondValue = arrayLang.en[`${dataEl}`].second
+          el.querySelector('.p-first').innerText = arrayLang.en[`${dataEl}`].first
+          el.querySelector('.p-second').innerText = arrayLang.en[`${dataEl}`].second
+        })
       }
     }
 
@@ -102,7 +111,6 @@ function changeLanguage() {
   document.addEventListener("keyup", function (e) {
     arrKey.splice(arrKey.indexOf(e.which), 1);
   });
-  console.log(Boolean(arrKey.includes(16) && arrKey.includes(18)))
 
 }
-changeLanguage();
+changeLanguage(keyboard.node, keysLang);

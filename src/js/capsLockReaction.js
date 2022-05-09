@@ -16,11 +16,9 @@ export default function capsLockReaction(elem) {
       console.log('this is caps lock')
       if (!elem.classList.contains("key-func")) {
           if(localStorage.capsLock !== 'true'){
-            // console.log('this is caps lock - true')
           arrElem[0].innerHTML = arrElem[0].innerHTML.toUpperCase();
           elem.dataset.firstValue = arrElem[0].innerHTML
         } else {
-          // console.log('this is caps lock - false')
           arrElem[0].innerHTML = arrElem[0].innerHTML.toLowerCase();
           elem.dataset.firstValue = arrElem[0].innerHTML
         }        
