@@ -10,7 +10,20 @@ function startEventKey() {
       }
     }
     if (downKey.dataset.code !== "CapsLock") downKey.classList.add("active");
-    if (downKey.dataset.code === "CapsLock") downKey.classList.toggle("active");
+    if (downKey.dataset.code === "CapsLock"){ 
+      //  if(downKey.classList.contains("active")){
+      //    downKey.classList.remove('active')
+      //  }else {
+      //    downKey.classList.add('active')
+      //  }
+      if(localStorage.capsLock === 'true'){
+        localStorage.capsLock = 'false';
+        downKey.classList.remove('active')
+      } else {
+        localStorage.capsLock = 'true';
+        downKey.classList.add('active')
+      }
+    }
     if (downKey.dataset.code === "Tab") addText("\t");
     if (!event.isTrusted) {
       if (downKey.dataset.code === "Enter") addText("\n");
@@ -27,7 +40,7 @@ function startEventKey() {
       if (downKey.dataset.code === "Backspace")
         addText('', 'prev');
       if (!downKey.classList.contains("key-func"))
-        addText(String(downKey.dataset.firstValue));
+        addText(downKey.dataset.firstValue);
       // elem.value += downKey.dataset.firstValue;
     }
   });
@@ -74,20 +87,3 @@ function addText(text, minus = "no") {
     }
   
 }
-
-// if (evt.target.closest(".backspace") === button) {
-//   const { value } = textarea;
-//   const start = textarea.selectionStart;
-//   const end = textarea.selectionEnd;
-// }
-// if (evt.target.closest(".del") === button) {
-//   const { value } = textarea;
-//   const start = textarea.selectionStart;
-//   const end = textarea.selectionEnd;
-//   textarea.value =
-//     start === end
-//       ? value.slice(0, start) + value.slice(end + 1)
-//       : value.slice(0, start) + value.slice(end);
-//   textarea.selectionStart = start;
-//   textarea.selectionEnd = start;
-// }

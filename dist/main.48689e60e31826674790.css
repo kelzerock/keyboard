@@ -1,0 +1,157 @@
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
+  \*******************************************************************************************************************************************************/
+body {
+  background-color: rgb(173, 199, 173);
+  margin: 0;
+}
+body * {
+  margin: 0;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 12px 0px 200px #3e423e;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main-wrapper [class*=__container] {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.main-wrapper .main {
+  width: 100%;
+  flex: 1 1 auto;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.main-wrapper .main .keyboard-area {
+  margin: 20px 0;
+  height: 200px;
+  flex: 0 1 500px;
+}
+
+.keyboard {
+  min-height: 200px;
+  flex: 0 0 689px;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.keyboard .keyboard-line {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.keyboard .keyboard-line .key {
+  flex: 0 1 40px;
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: rgb(22, 20, 20);
+  color: white;
+  display: flex;
+  height: 35px;
+  flex-direction: column-reverse;
+  position: relative;
+  transition: all 0.1s;
+  cursor: pointer;
+  user-select: none;
+}
+.keyboard .keyboard-line .key:hover {
+  background-color: rgb(97, 82, 82);
+}
+.keyboard .keyboard-line .key .p-first {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+.keyboard .keyboard-line .key .p-second {
+  color: wheat;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  font-size: 0.7em;
+}
+.keyboard .keyboard-line .key.active {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transform: scale(0.93);
+  box-shadow: 2px 2px 10px black;
+}
+.keyboard .keyboard-line .key-1 {
+  flex: 0 0 40px;
+}
+.keyboard .keyboard-line .key-2,
+.keyboard .keyboard-line .key-3 {
+  flex: 1 1 50px;
+}
+.keyboard .keyboard-line .key-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard .keyboard-line .key-one p:first-child {
+  display: block;
+  top: auto;
+  left: auto;
+  text-align: center;
+}
+.keyboard .keyboard-line .key-func {
+  background-color: rgb(2, 2, 2);
+  font-size: 12px;
+}
+
+.footer {
+  height: 50px;
+  background-color: black;
+}
+.footer .wrapper-footer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  color: white;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 50px;
+}
+.footer .wrapper-footer img {
+  height: 100%;
+}
+.footer .wrapper-footer h3 {
+  align-self: center;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding: 10px;
+}
+.header .important-info {
+  width: auto;
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ffffb3;
+}
+
+/*# sourceMappingURL=main.48689e60e31826674790.css.map*/

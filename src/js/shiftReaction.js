@@ -30,7 +30,6 @@ export default function shiftReaction(elem) {
   document.addEventListener("keyup", (event) => {
     const globalCapsLock = document.querySelector("#CapsLock");
     if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
-      // console.log('hi')
       if (arrElem[1].innerHTML) {
         elem.dataset.firstValue = arrElem[1].innerHTML;
         arrElem[1].classList.toggle("p-second");
